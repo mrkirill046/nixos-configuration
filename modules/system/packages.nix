@@ -8,6 +8,8 @@
     xwayland-satellite
     nautilus
     ntfs3g
+    os-prober
+    plymouth
 
     noto-fonts
     noto-fonts-cjk-sans
@@ -25,6 +27,7 @@
     file-roller
     loupe
     polkit_gnome
+    efibootmgr
 
     fish
     openssh
@@ -33,6 +36,5 @@
     polkit
     gnome-keyring
     libsecret
-    numlockx
   ];
 }

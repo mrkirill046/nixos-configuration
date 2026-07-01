@@ -2,6 +2,7 @@
 
 {
   services.xserver.enable = true;
+  services.xserver.xkb.options = "numlock:on";
 
   systemd.user.services.xwayland-satellite = {
     description = "Xwayland satellite";

@@ -13,8 +13,19 @@
     useOSProber = true; 
     configurationLimit = 5; 
 
-    theme = "${pkgs.sleek-grub-theme}";
+    theme = "${pkgs.catppuccin-grub}";
   };
+
+  boot.loader.grub.extraEntries = ''
+    menuentry "Windows 11" --class windows {
+        insmod part_gpt
+        insmod fat
+
+        search --fs-uuid --set=root 20D1-CA46
+
+        chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+    }
+  '';
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -35,6 +46,7 @@
 
   boot.plymouth = {
     enable = true;
-    theme = "bgrt"; 
+    
+    theme = "spinfinity";
   };
 }
