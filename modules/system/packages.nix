@@ -16,6 +16,16 @@
     jetbrains-mono
     nerd-fonts.jetbrains-mono
 
+    gvfs
+    glib
+    dconf
+    xdg-utils
+    shared-mime-info
+    ffmpegthumbnailer
+    file-roller
+    loupe
+    polkit_gnome
+
     fish
     openssh
     git
