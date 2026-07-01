@@ -1,0 +1,28 @@
+# Nix generated files
+result
+result-*
+
+# Secrets
+*.key
+*.pem
+*.secret
+secrets/
+
+# Editor stuff
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.tmp
+*~
+
+# OS garbage
+.DS_Store
+Thumbs.db
+
+# Home Manager backups
+*.backup
+
+# Age/sops secrets (если будешь использовать)
+.age/
