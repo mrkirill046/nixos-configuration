@@ -17,6 +17,8 @@
     nerd-fonts.jetbrains-mono
 
     fish
+    openssh
+    git
     tree
     polkit
     gnome-keyring
