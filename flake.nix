@@ -11,7 +11,7 @@
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
       modules = [
