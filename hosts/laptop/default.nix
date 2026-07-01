@@ -10,6 +10,7 @@
     ../../modules/system/users.nix
     ../../modules/system/packages.nix
     ../../modules/system/security.nix
+    ../../modules/system/state.nix
     ../../modules/system/environment.nix
 
     ../../modules/desktop/graphics.nix
@@ -24,6 +25,4 @@
     ../../modules/services/keyring.nix
     ../../modules/services/xwayland.nix
   ];
-
-  system.stateVersion = "26.05";
 }
