@@ -19,8 +19,10 @@
     ../../modules/virtualisation/podman.nix
 
     ../../modules/programs/fish.nix
+    ../../modules/programs/direnv.nix
 
     ../../modules/services/keyring.nix
+    ../../modules/services/xwayland.nix
   ];
 
   system.stateVersion = "26.05";

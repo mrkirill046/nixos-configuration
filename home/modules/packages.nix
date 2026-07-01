@@ -9,5 +9,8 @@
     btop
     ayugram-desktop
     vscode
+
+    adwaita-icon-theme
+    hicolor-icon-theme
   ];
 }

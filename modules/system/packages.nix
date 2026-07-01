@@ -21,5 +21,6 @@
     polkit
     gnome-keyring
     libsecret
+    numlockx
   ];
 }
