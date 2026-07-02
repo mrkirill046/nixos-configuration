@@ -3,12 +3,14 @@
 {
   imports = [
     inputs.niri.homeModules.config
+    inputs.noctalia.homeModules.default
 
     ./modules/packages.nix
     ./modules/desktop.nix
     ./modules/environment.nix
     ./modules/nixcord.nix
 
+    ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix
   ];
 

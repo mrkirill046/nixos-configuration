@@ -27,9 +27,6 @@
     # Media / wallpapers
     mpvpaper
 
-    # Notifications
-    mako
-
     # Lock screen
     hyprlock
 

@@ -37,6 +37,7 @@ in
       spawn-at-startup = [
         {command = ["wl-paste" "--watch" "cliphist" "store"];}
         {command = ["wl-paste" "--type text" "--watch" "cliphist" "store"];}
+        {command = ["noctalia"];}
         {command = [
             "mpvpaper" "--layer" "background"  "-o" 
             "--loop --no-audio --hwdec=auto --fullscreen --video-sync=display-resample --gpu-context=x11egl" 

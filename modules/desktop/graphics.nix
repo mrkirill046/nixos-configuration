@@ -8,6 +8,9 @@
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
+
   hardware.nvidia = {
     prime = {
       offload = {

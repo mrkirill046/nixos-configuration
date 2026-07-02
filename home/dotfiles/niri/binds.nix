@@ -9,27 +9,56 @@
     playerctl = spawn "${pkgs.playerctl}/bin/playerctl";
   in 
   {
-    "XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
-    "XF86AudioMicMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle";
+    ### Noctalia shell 
+    # Audio
+    "XF86AudioRaiseVolume" = {
+      hotkey-overlay.title = "Increase volume";
+      action = spawn "sh" "-c" "noctalia msg volume-up";
+    };
+    "XF86AudioLowerVolume" = {
+      hotkey-overlay.title = "Decrease volume";
+      action = spawn "sh" "-c" "noctalia msg volume-down";
+    };
 
+    "XF86AudioMute" = {
+      hotkey-overlay.title = "Mute volume";
+      action = spawn "sh" "-c" "noctalia msg volume-mute";
+    };
+
+    # Brightness
+    "XF86MonBrightnessUp" = {
+      hotkey-overlay.title = "Increase brightness";
+      action = spawn "sh" "-c" "noctalia msg brightness-up";
+    };
+    "XF86MonBrightnessDown" = {
+      hotkey-overlay.title = "Decrease brightness";
+      action = spawn "sh" "-c" "noctalia msg brightness-down";
+    };
+
+    # Noctalia core
+    "Mod+I" = {
+      hotkey-overlay.title = "Toggle settings";
+      action = spawn "sh" "-c" "noctalia msg settings-toggle";
+    };
+    "Mod+D"= {
+      hotkey-overlay.title = "Toggle launcher";
+      action = spawn "sh" "-c" "noctalia msg panel-toggle launcher";
+    };
+    "Mod+U"= {
+      hotkey-overlay.title = "Toggle control center";
+      action = spawn "sh" "-c" "noctalia msg panel-toggle control-center";
+    };
+
+    ### Other
     "XF86AudioPlay".action = playerctl "play-pause";
     "XF86AudioStop".action = playerctl "pause";
     "XF86AudioPrev".action = playerctl "previous";
     "XF86AudioNext".action = playerctl "next";
-
-    "XF86AudioRaiseVolume".action = set-volume "5%+";
-    "XF86AudioLowerVolume".action = set-volume "5%-";
-
-    "XF86MonBrightnessUp".action = brillo "-A" "5";
-    "XF86MonBrightnessDown".action = brillo "-U" "5";
-
+    
     "Print".action.screenshot-screen = {write-to-disk = true;};
     "Mod+Shift+S".action.screenshot = {show-pointer = false;};
-    "Mod+D".action = spawn "${pkgs.fuzzel}/bin/fuzzel";
     "Mod+Return".action = spawn "${pkgs.ghostty}/bin/ghostty";
     "Ctrl+Alt+L".action = spawn "sh -c pgrep hyprlock || hyprlock";
-
-    "Mod+U".action = spawn "sh" "-c" "env XDG_CURRENT_DESKTOP=gnome gnome-control-center";
 
     "Mod+Slash".action = { show-hotkey-overlay = [ ]; };
 

@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
     # Desktop / GUI base
     alacritty
-    fuzzel
     nautilus
 
     # Filesystem / compatibility
