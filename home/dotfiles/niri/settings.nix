@@ -6,6 +6,10 @@ in
 {
   programs.niri = {
     settings = {
+      hotkey-overlay = {
+        skip-at-startup = true;
+      };
+
       input = {
         keyboard = {
           numlock = true;
@@ -41,6 +45,8 @@ in
         }
         {command = ["discord" "--start-minimized"];}
         {command = ["steam" "-silent"];}
+        {command = ["AyuGram" "-startintray"];}
+        {command = ["gtk-launch" "arch-koala-clash"];}
       ];
 
       outputs = {

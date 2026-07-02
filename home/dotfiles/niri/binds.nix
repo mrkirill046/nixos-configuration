@@ -31,6 +31,8 @@
 
     "Mod+U".action = spawn "sh" "-c" "env XDG_CURRENT_DESKTOP=gnome gnome-control-center";
 
+    "Mod+Slash".action = { show-hotkey-overlay = [ ]; };
+
     "Mod+Q".action = close-window;
     "Mod+S".action = switch-preset-column-width;
     "Mod+F".action = maximize-column;
@@ -53,6 +55,8 @@
     "Mod+Equal".action = set-column-width "+10%";
     "Mod+Shift+Minus".action = set-window-height "-10%";
     "Mod+Shift+Equal".action = set-window-height "+10%";
+
+    "Ctrl+Alt+Delete".action = quit;
 
     "Mod+H".action = focus-column-left;
     "Mod+L".action = focus-column-right;

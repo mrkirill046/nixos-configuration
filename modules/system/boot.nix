@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   boot.consoleLogLevel = 0;
@@ -52,6 +52,7 @@
   boot.plymouth = {
     enable = true;
     
-    theme = "spinfinity";
+      theme = "mac-style";
+      themePackages = [ pkgs.mac-style-plymouth ];
   };
 }

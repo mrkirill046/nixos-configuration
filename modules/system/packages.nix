@@ -14,6 +14,7 @@
     glib
     dconf
     xdg-utils
+    gtk3
     shared-mime-info
     libxshmfence
 
@@ -31,7 +32,6 @@
     efibootmgr
 
     # Login manager / themes
-    sddm-astronaut
     material-cursors
 
     # Fonts

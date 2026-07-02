@@ -34,26 +34,33 @@
         flake-parts.follows = "flake-parts";
       };
     };
+    
+    mac-style-plymouth = {
+      url = "github:SergioRibera/s4rchiso-plymouth-theme";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, niri, ... }@inputs: {
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
-      specialArgs = {
-        inherit inputs;
-      };
-
       modules = [
+        ({ config, pkgs, ... }: {
+          nixpkgs.overlays = [
+            inputs.mac-style-plymouth.overlays.default
+          ];
+        })
+
         ./hosts/laptop
 
         home-manager.nixosModules.home-manager
         {
-          home-manager = { 
-            useGlobalPkgs = true; 
+          home-manager = {
+            useGlobalPkgs = true;
             useUserPackages = true;
 
-            users.mrkir = import ./home/home.nix; 
+            users.mrkir = import ./home/home.nix;
 
             extraSpecialArgs = {
               inherit inputs;
@@ -61,6 +68,10 @@
           };
         }
       ];
+
+      specialArgs = {
+        inherit inputs;
+      };
     };
   };
 }

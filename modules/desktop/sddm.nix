@@ -5,18 +5,58 @@ let
     embeddedTheme = "japanese_aesthetic";
 
     themeConfig = {
-      HeaderTextColor = "#d5c4a1";
-      Background = "Backgrounds/my-custom-background.png";
+      HeaderTextColor = "#d8d8ff";
+      DateTextColor = "#d8d8ff";
+      TimeTextColor = "#d8d8ff";
+
+      FormBackgroundColor = "#242455";
+      BackgroundColor = "#242455";
+      DimBackgroundColor = "#242455";
+
+      LoginFieldBackgroundColor = "#d8d8ff";
+      PasswordFieldBackgroundColor = "#d8d8ff";
+      LoginFieldTextColor = "#d8d8ff";
+      PasswordFieldTextColor = "#d8d8ff";
+      UserIconColor = "#d8d8ff";
+      PasswordIconColor = "#d8d8ff";
+
+      PlaceholderTextColor = "#6c6caa";
+      WarningColor = "#d8d8ff";
+
+      LoginButtonTextColor = "#6c6caa";
+      LoginButtonBackgroundColor = "#d8d8ff";
+      SystemButtonsIconsColor = "#d8d8ff";
+      SessionButtonTextColor = "#d8d8ff";
+      VirtualKeyboardButtonTextColor = "#d8d8ff";
+
+      DropdownTextColor = "#6c6caa";
+      DropdownSelectedBackgroundColor = "#f8f8ff";
+      DropdownBackgroundColor = "#d8d8ff";
+
+      HighlightTextColor = "#484855";
+      HighlightBackgroundColor = "#d8d8ff";
+      HighlightBorderColor = "transparent";
+
+      HoverUserIconColor = "#6c6caa";
+      HoverPasswordIconColor = "#6c6caa";
+      HoverSystemButtonsIconsColor = "#6c6caa";
+      HoverSessionButtonTextColor = "#6c6caa";
+      HoverVirtualKeyboardButtonTextColor = "#6c6caa";
+
+      HeaderText = "Hello, Kirill!";
+      Background = "Backgrounds/my-custom-background.mp4";
     };
   }).overrideAttrs (oldAttrs: {
     installPhase = oldAttrs.installPhase + ''
       chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-      cp ${../../assets/wallpapers/wallpaper-1080p.png} \
-        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my-custom-background.png
+      cp ${../../assets/wallpapers/wallpaper-1080p.mp4} \
+        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my-custom-background.mp4
     '';
   });
 in
 {
+  environment.systemPackages = [ sddm-astronaut ];
+  
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
