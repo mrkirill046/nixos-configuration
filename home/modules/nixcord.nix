@@ -24,7 +24,7 @@
         betterGifPicker.enable = true;
 
         callTimer.enable = true;
-        ClearURLs.enable = true;
+        clearUrls.enable = true;
 
         fakeNitro.enable = true;
         favoriteEmojiFirst.enable = true;

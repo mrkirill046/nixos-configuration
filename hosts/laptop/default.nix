@@ -15,8 +15,11 @@
 
     ../../modules/desktop/graphics.nix
     ../../modules/desktop/sddm.nix
+    ../../modules/desktop/niri.nix
 
     ../../modules/virtualisation/podman.nix
+    ../../modules/virtualisation/ollama.nix
+    ../../modules/virtualisation/docker.nix
 
     ../../modules/programs/fish.nix
     ../../modules/programs/direnv.nix
@@ -28,6 +31,4 @@
     ../../modules/services/polkit.nix
     ../../modules/services/pipewire.nix
   ];
-
-  programs.niri.enable = true;
 }

@@ -5,8 +5,9 @@
     # Browsers / Internet
     librewolf
     chromium
+    ayugram-desktop
 
-    # Dev / IDE
+    # Dev / IDE / Tools
     vscode
 
     # Gaming

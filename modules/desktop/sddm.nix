@@ -6,13 +6,13 @@ let
 
     themeConfig = {
       HeaderTextColor = "#d5c4a1";
-      Background = "Backgrounds/my-custom-background.jpg";
+      Background = "Backgrounds/my-custom-background.png";
     };
   }).overrideAttrs (oldAttrs: {
     installPhase = oldAttrs.installPhase + ''
       chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-      cp ${../../assets/wallpapers/wallpaper-1080p.jpg} \
-        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my-custom-background.jpg
+      cp ${../../assets/wallpapers/wallpaper-1080p.png} \
+        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my-custom-background.png
     '';
   });
 in
