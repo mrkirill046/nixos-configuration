@@ -10,9 +10,9 @@ let
     };
   }).overrideAttrs (oldAttrs: {
     installPhase = oldAttrs.installPhase + ''
-      chmod u+w $out/share/sddm/themes/sddm-astronaut/Backgrounds/
+      chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
       cp ${../../assets/wallpapers/wallpaper-1080p.jpg} \
-        $out/share/sddm/themes/sddm-astronaut/Backgrounds/my-custom-background.jpg
+        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/my-custom-background.jpg
     '';
   });
 in
@@ -27,16 +27,6 @@ in
       kdePackages.qtmultimedia 
     ];
     
-    theme = "sddm-astronaut";
-
-    settings = {
-      General = {
-        InputMethod = "";
-      };
-
-      Keyboard = {
-        NumLock = "on";
-      };
-    };
+    theme = "sddm-astronaut-theme";
   };
 }

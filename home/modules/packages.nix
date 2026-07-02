@@ -5,7 +5,6 @@
     # Browsers / Internet
     librewolf
     chromium
-    discord
 
     # Dev / IDE
     vscode
@@ -14,7 +13,7 @@
     steam
 
     # Mods / tweaks
-    betterdiscord-installer
+    gamemode
 
     # Clipboard / productivity
     wl-clipboard
@@ -51,6 +50,7 @@
     zip
     curl
     wget
+    btop
 
     # Icons / themes
     adwaita-icon-theme

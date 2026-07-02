@@ -7,6 +7,7 @@
     ./modules/packages.nix
     ./modules/desktop.nix
     ./modules/environment.nix
+    ./modules/nixcord.nix
 
     ./dotfiles/niri/default.nix
   ];
