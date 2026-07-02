@@ -2,39 +2,55 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Desktop / GUI base
     alacritty
     fuzzel
-    distrobox
-    xwayland-satellite
     nautilus
+
+    # Filesystem / compatibility
+    distrobox
     ntfs3g
-    os-prober
-    plymouth
-
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-
-    jetbrains-mono
-    nerd-fonts.jetbrains-mono
-
     gvfs
     glib
     dconf
     xdg-utils
     shared-mime-info
+    libxshmfence
+
+    # File previews / GUI utilities
     ffmpegthumbnailer
     file-roller
     loupe
-    polkit_gnome
+
+    # Wayland / X11 bridge
+    xwayland-satellite
+
+    # Boot / system tools
+    os-prober
+    plymouth
     efibootmgr
 
+    # Login manager / themes
+    sddm-astronaut
+    material-cursors
+
+    # Fonts
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-color-emoji
+    jetbrains-mono
+    nerd-fonts.jetbrains-mono
+
+    # Security / auth
+    polkit
+    polkit_gnome
+    gnome-keyring
+    libsecret
+
+    # Shell / dev tools
     fish
     openssh
     git
     tree
-    polkit
-    gnome-keyring
-    libsecret
   ];
 }

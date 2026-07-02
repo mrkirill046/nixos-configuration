@@ -19,13 +19,15 @@ in
 
       environment = {
         CLUTTER_BACKEND = "wayland";
-        DISPLAY = null;
         GDK_BACKEND = "wayland,x11";
         MOZ_ENABLE_WAYLAND = "1";
         NIXOS_OZONE_WL = "1";
         QT_QPA_PLATFORM = "wayland;xcb";
         QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
         SDL_VIDEODRIVER = "wayland";
+
+        XCURSOR_THEME = "material-cursors";
+        XCURSOR_SIZE = "24";
       };
 
       spawn-at-startup = [
@@ -37,6 +39,8 @@ in
             "eDP-1" "/home/mrkir/Videos/Wallpapers/wallpaper-1080p.mp4"
           ];
         }
+        {command = ["discord" "--start-minimized"];}
+        {command = ["steam" "-silent"];}
       ];
 
       outputs = {
@@ -50,7 +54,7 @@ in
       };
 
       cursor = {
-        size = 20;
+        size = 24;
         theme = "${pointer.name}";
       };
     };

@@ -2,31 +2,46 @@
 
 {
   home.packages = with pkgs; [
-    steam
+    # Browsers / Internet
     librewolf
     chromium
+    discord
+
+    # Dev / IDE
     vscode
 
-    # Clipboard
+    # Gaming
+    steam
+
+    # Mods / tweaks
+    betterdiscord-installer
+
+    # Clipboard / productivity
     wl-clipboard
     cliphist
 
-    # Screenshot
+    # Screenshots / screen tools
     grim
     slurp
 
-    # Desktop
+    # Media / wallpapers
     mpvpaper
+
+    # Notifications
     mako
-    waybar
+
+    # Lock screen
     hyprlock
 
-    # GUI
+    # GUI system tools
     gnome-control-center
     networkmanagerapplet
     blueman
 
-    # Tools
+    # Bluetooth stack (user tools)
+    bluez
+
+    # CLI tools
     ripgrep
     fd
     bat
@@ -37,7 +52,7 @@
     curl
     wget
 
-    # Themes
+    # Icons / themes
     adwaita-icon-theme
     hicolor-icon-theme
   ];

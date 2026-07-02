@@ -24,15 +24,12 @@
     "XF86MonBrightnessDown".action = brillo "-U" "5";
 
     "Print".action.screenshot-screen = {write-to-disk = true;};
-    "Mod+Shift+Alt+S" = {
-      action.screenshot-window = {};
-    };
     "Mod+Shift+S".action.screenshot = {show-pointer = false;};
     "Mod+D".action = spawn "${pkgs.fuzzel}/bin/fuzzel";
     "Mod+Return".action = spawn "${pkgs.ghostty}/bin/ghostty";
     "Ctrl+Alt+L".action = spawn "sh -c pgrep hyprlock || hyprlock";
 
-    "Mod+U".action = spawn "env XDG_CURRENT_DESKTOP=gnome gnome-control-center";
+    "Mod+U".action = spawn "sh" "-c" "env XDG_CURRENT_DESKTOP=gnome gnome-control-center";
 
     "Mod+Q".action = close-window;
     "Mod+S".action = switch-preset-column-width;
@@ -53,9 +50,9 @@
     "Mod+Tab".action = switch-focus-between-floating-and-tiling;
 
     "Mod+Minus".action = set-column-width "-10%";
-    "Mod+Plus".action = set-column-width "+10%";
+    "Mod+Equal".action = set-column-width "+10%";
     "Mod+Shift+Minus".action = set-window-height "-10%";
-    "Mod+Shift+Plus".action = set-window-height "+10%";
+    "Mod+Shift+Equal".action = set-window-height "+10%";
 
     "Mod+H".action = focus-column-left;
     "Mod+L".action = focus-column-right;

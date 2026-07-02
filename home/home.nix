@@ -19,7 +19,11 @@
   home.pointerCursor = {
     name = "material-cursors";
     package = pkgs.material-cursors;
-    size = 20;
+    size = 24;
+
+
+    gtk.enable = true;
+    x11.enable = true;
   };
 
   programs.home-manager.enable = true;

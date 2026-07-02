@@ -3,7 +3,7 @@
 {
   boot.consoleLogLevel = 0;
   boot.initrd.verbose = false;
-
+  boot.initrd.systemd.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.loader.grub = {
@@ -30,7 +30,6 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.kernelParams = [
-    "console=quiet"
     "quiet"
     "splash"
     "boot.shell_on_fail"
@@ -38,10 +37,16 @@
     "rd.systemd.show_status=false"
     "rd.udev.log_level=3"
     "udev.log_priority=3"
+    "nvidia_drm.modeset=1"
+    "nvidia_drm.fbdev=1"
   ];
 
   boot.kernelModules = [
     "tun"
+  ];
+
+  boot.initrd.kernelModules = [
+    "amdgpu"
   ];
 
   boot.plymouth = {
