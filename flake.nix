@@ -8,21 +8,55 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nix-index-db = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nix-gaming = {
+      url = "github:fufexan/nix-gaming";
+      
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-parts.follows = "flake-parts";
+      };
+    };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, niri, ... }@inputs: {
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+
+      specialArgs = {
+        inherit inputs;
+      };
 
       modules = [
         ./hosts/laptop
 
         home-manager.nixosModules.home-manager
         {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-         
-          home-manager.users.mrkir = import ./home/home.nix; 
+          home-manager = { 
+            useGlobalPkgs = true; 
+            useUserPackages = true;
+
+            users.mrkir = import ./home/home.nix; 
+
+            extraSpecialArgs = {
+              inherit inputs;
+            };
+          };
         }
       ];
     };

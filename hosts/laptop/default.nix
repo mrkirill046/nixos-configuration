@@ -15,7 +15,6 @@
 
     ../../modules/desktop/graphics.nix
     ../../modules/desktop/greetd.nix
-    ../../modules/desktop/niri.nix
 
     ../../modules/virtualisation/podman.nix
 
@@ -28,4 +27,6 @@
     ../../modules/services/gnome.nix
     ../../modules/services/polkit.nix
   ];
+
+  programs.niri.enable = true;
 }

@@ -33,7 +33,8 @@
     
     options = [ 
       "nofail"                 
-      "x-systemd.automount"    
+      "x-systemd.automount"   
+      "x-gvfs-show" 
       "uid=1000"               
       "gid=100"                
       "dmask=007"              
