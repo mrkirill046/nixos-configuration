@@ -28,6 +28,9 @@
 
           community_ids = [
             "discord"
+            "steam"
+            "vscode"
+            "obsidian"
           ];
         };
       };

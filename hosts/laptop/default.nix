@@ -22,6 +22,7 @@
     ../../modules/virtualisation/docker.nix
 
     ../../modules/programs/fish.nix
+    ../../modules/programs/uv.nix
     ../../modules/programs/direnv.nix
 
     ../../modules/services/keyring.nix

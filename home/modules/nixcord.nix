@@ -5,13 +5,15 @@
     inputs.nixcord.homeModules.nixcord
   ];
 
+  home.file.".config/Equicord/settings/quickCss.css".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/Equicord/themes/noctalia-material.theme.css";
+
   programs.nixcord = {
     enable = true;
     
     discord.equicord.enable = true;
 
     config = {
-      useQuickCss = false;
+      useQuickCss = true;
       frameless = true;
 
       plugins = {

@@ -1,0 +1,21 @@
+{
+  "name": "raiden-theme",
+  "displayName": "Raiden Theme",
+  "publisher": "mrkir",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Raiden Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/RaidenTheme-color.json"
+      }
+    ]
+  }
+}

@@ -8,6 +8,7 @@
     ./modules/packages.nix
     ./modules/desktop.nix
     ./modules/environment.nix
+    ./modules/vscode.nix
     ./modules/nixcord.nix
 
     ./dotfiles/noctalia/default.nix

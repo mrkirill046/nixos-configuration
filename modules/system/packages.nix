@@ -51,5 +51,13 @@
     openssh
     git
     tree
+    rustc
+    cargo
+    rustfmt
+    clippy
+    uv
+    nodejs_24
+    bun
+    dotnet-sdk_9
   ];
 }
