@@ -8,6 +8,7 @@
 
   programs.vscode = {
     enable = true;
+    mutableExtensionsDir = true;
     
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
@@ -21,10 +22,103 @@
         arrterian.nix-env-selector
         jnoortheen.nix-ide
         mkhl.direnv
+        pkief.material-icon-theme
+        ritwickdey.liveserver
+        formulahendry.auto-rename-tag
+        usernamehw.errorlens
+        prisma.prisma
+        ms-azuretools.vscode-docker
+        vue.volar
       ];
 
       userSettings = {
-        "workbench.colorTheme" = "Raiden Theme";
+        chat.commandCenter.enabled = false;
+
+        extensions.ignoreRecommendations = true;
+
+        files = {
+          insertFinalNewLine = true;
+          autoSave = "afterDelay";
+        };
+
+        github.copilot = {
+          enable = {
+            "*" = false;
+          };
+          
+          inlineSuggest.enable = false;
+        };
+
+        workbench = {
+          colorTheme = "Raiden Theme";
+          iconTheme = "material-icon-theme";
+          
+          tree = {
+            indent = 14;
+
+            renderIndentGuides = "none";
+          };
+          
+          sideBar.location = "right";
+          activityBar.location = "hidden";
+
+          layoutControl.enabled = false;
+          tips.enabled = false;
+
+          view = {
+            explorer = {
+              outline.visible = false;
+              timeline.visible = false;
+            };
+          };
+        };
+
+        editor = {
+          tabSize = 4;
+
+          multiCursorModifier = "ctrlCmd";
+          cursorBlinking = "solid";
+
+          fontFamily = "'JetBrains Mono', 'bold', bold";
+          fontSize = 22;
+
+          minimap.enabled = false;
+          stickyScroll.enabled = true;
+
+          overviewRulerBorder = false;
+          detectIndentation = false;
+          hideCursorInOverviewRuler = true;
+          
+          occurrencesHighlight = "off";
+          matchBrackets = "never";
+        };
+
+        window = {
+          zoomLevel = 1;
+
+          customTitleBarVisibility = "never";
+          titleBarStyle = "native";
+          menuBarVisibility = "toggle";
+        };
+
+        explorer = {
+          confirmDelete = false;
+          confirmDragAndDrop = false;
+        };
+
+        codeium.enableConfig = {
+          "*" = true;
+        };
+
+        "[nix]" = {
+          editor.tabSize = 2;
+        };
+        "[json]" = {
+          editor.tabSize = 2;
+        };
+        "[jsonc]" = {
+          editor.tabSize = 2;
+        };
       };
     };
   };
