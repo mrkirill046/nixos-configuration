@@ -9,6 +9,12 @@
 
     # Dev / IDE / Tools
     vscode
+    unityhub
+    jetbrains.webstorm
+    jetbrains.pycharm
+    jetbrains.rider
+    jetbrains.rust-rover
+    jetbrains.datagrip
 
     # Gaming
     steam
@@ -49,6 +55,7 @@
     curl
     wget
     btop
+    cava
 
     # Icons / themes
     adwaita-icon-theme

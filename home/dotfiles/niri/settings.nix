@@ -44,7 +44,7 @@ in
             "eDP-1" "/home/mrkir/Videos/Wallpapers/wallpaper-1080p.mp4"
           ];
         }
-        {command = ["discord" "--start-minimized"];}
+        {command = ["sh" "-c" "sleep 5 && discord --start-minimized"];}
         {command = ["steam" "-silent"];}
         {command = ["AyuGram" "-startintray"];}
         {command = ["gtk-launch" "arch-koala-clash"];}

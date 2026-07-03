@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, config, ... }:
 
 {
   imports = [ 
@@ -11,15 +11,12 @@
     discord.equicord.enable = true;
 
     config = {
-      useQuickCss = true;
+      useQuickCss = false;
       frameless = true;
 
-      themeLinks = [
-        "https://capnkitten.github.io/Material-Discord/Material-Discord.theme.css"
-        "https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/EmojiReplace.theme.css"
-      ];
-
       plugins = {
+        openInApp.enable = true;
+
         betterFolders.enable = true;
         betterGifPicker.enable = true;
 

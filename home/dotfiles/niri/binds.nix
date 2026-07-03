@@ -57,7 +57,7 @@
     
     "Print".action.screenshot-screen = {write-to-disk = true;};
     "Mod+Shift+S".action.screenshot = {show-pointer = false;};
-    "Mod+Return".action = spawn "${pkgs.ghostty}/bin/ghostty";
+    "Mod+Return".action = spawn "${pkgs.alacritty}/bin/alacritty";
     "Ctrl+Alt+L".action = spawn "sh -c pgrep hyprlock || hyprlock";
 
     "Mod+Slash".action = { show-hotkey-overlay = [ ]; };

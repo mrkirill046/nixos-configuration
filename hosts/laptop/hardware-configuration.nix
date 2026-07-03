@@ -29,17 +29,16 @@
 
   fileSystems."/mnt/storage" = {
     device = "/dev/disk/by-uuid/B656B71356B6D2FB";
-    fsType = "ntfs3";
+    fsType = "ntfs-3g";
     
     options = [ 
       "nofail"                 
-      "x-systemd.automount"   
+      "x-systemd.automount" 
       "x-gvfs-show" 
-      "uid=1000"               
-      "gid=100"                
-      "dmask=007"              
-      "fmask=117"              
-      "iocharset=utf8"        
+      "uid=1000"
+      "gid=100"    
+      "umask=022"
+      "windows_names"
     ];
   };
 
