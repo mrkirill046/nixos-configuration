@@ -11,6 +11,7 @@
     ./modules/xdg.nix
 
     ./programs/vscode.nix
+    ./programs/ghostty.nix
     ./programs/nixcord.nix
 
     ./dotfiles/noctalia/default.nix

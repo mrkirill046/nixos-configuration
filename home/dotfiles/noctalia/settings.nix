@@ -61,8 +61,12 @@
         lang = "en";
         font_family = "TeX Gyre Heros";
 
+        avatar_path = "${config.home.homeDirectory}/Pictures/Avatars/kazuha.jpg";
+
         time_format = "{:%I:%M %p}";
         date_format = "%A, %d %B";
+
+        polkit_agent = true;
 
         corner_radius_scale = 2;
 

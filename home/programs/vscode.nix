@@ -11,6 +11,19 @@
     mutableExtensionsDir = true;
     
     profiles.default = {
+      keybindings = [
+        {
+          key = "ctrl+c";
+          command = "workbench.action.terminal.copySelection";
+          when = "terminalFocus && terminalProcessSupported && terminalTextSelected";
+        }
+        {
+          key = "ctrl+v";
+          command = "workbench.action.terminal.paste";
+          when = "terminalFocus && terminalProcessSupported";
+        }
+      ];
+
       extensions = with pkgs.vscode-extensions; [
         ms-python.python
         ms-dotnettools.csharp

@@ -58,7 +58,7 @@
       hotkey-overlay.title = "Toggle settings";
       action = spawn "sh" "-c" "noctalia msg settings-toggle";
     };
-    "Mod+D" = {
+    "Ctrl+Space" = {
       hotkey-overlay.title = "Toggle launcher";
       action = spawn "sh" "-c" "noctalia msg panel-toggle launcher";
     };
@@ -81,6 +81,12 @@
     "Ctrl+Alt+Delete" = {
       hotkey-overlay.title = "Show session menu";
       action = spawn "sh" "-c" "noctalia msg panel-open session";
+    };
+
+    # Noctalia panels
+    "Mod+V" = {
+      hotkey-overlay.title = "Show clipboard panel";
+      action  = spawn "sh" "-c" "noctalia msg panel-toggle clipboard";
     };
 
     # Window management
@@ -113,6 +119,16 @@
       action = terminal;
     };
 
+    "Mod+E" = {
+      hotkey-overlay.title = "Open file manager";
+      action = spawn "${pkgs.nautilus}/bin/nautilus";
+    };
+
+    "Mod+B" = {
+      hotkey-overlay.title = "Open browser";
+      action = spawn "${pkgs.librewolf}/bin/librewolf";
+    };
+
     ### Other
     
     
@@ -129,7 +145,7 @@
     "Mod+4".action = set-column-width "100%";
     # "Mod+Shift+F".action = fullscreen-window;
     "Mod+Shift+F".action = expand-column-to-available-width;
-    "Mod+V".action = toggle-window-floating;
+    # "Mod+V".action = toggle-window-floating;
     "Mod+W".action = toggle-column-tabbed-display;
 
     "Mod+Comma".action = consume-window-into-column;
