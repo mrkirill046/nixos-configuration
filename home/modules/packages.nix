@@ -51,6 +51,8 @@
     wget
     btop
     cava
+    dust
+    duf
 
     # Icons / themes
     adwaita-icon-theme

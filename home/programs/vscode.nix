@@ -55,6 +55,11 @@
           autoSave = "afterDelay";
         };
 
+        terminal.integrated = {
+          fontFamily = "JetBrainsMono Nerd Font";
+          fontSize = 13;
+        };
+
         github.copilot = {
           enable = {
             "*" = false;
