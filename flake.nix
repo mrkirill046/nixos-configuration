@@ -51,26 +51,19 @@
   };
 
   outputs =
-    {
-      nixpkgs,
-      home-manager,
-      fjordlauncher,
-      ...
-    }@inputs:
+    { nixpkgs, home-manager, ... }@inputs:
     {
       nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         modules = [
-          ({ pkgs, ... }: {
+          ({ ... }: {
             nixpkgs.overlays = [
               inputs.mac-style-plymouth.overlays.default
-              fjordlauncher.overlays.default
             ];
-
-            environment.systemPackages = [ pkgs.fjordlauncher ];
           })
 
+          ./hosts/laptop
           ./hosts/laptop
 
           home-manager.nixosModules.home-manager
@@ -78,7 +71,13 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
 
+              users.mrkir = import ./home/home.nix;
               users.mrkir = import ./home/home.nix;
 
               extraSpecialArgs = {
@@ -87,7 +86,18 @@
             };
           }
         ];
+              extraSpecialArgs = {
+                inherit inputs;
+              };
+            };
+          }
+        ];
 
+        specialArgs = {
+          inherit inputs;
+        };
+      };
+    };
         specialArgs = {
           inherit inputs;
         };

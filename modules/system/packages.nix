@@ -15,6 +15,7 @@
     gvfs
     unar
     glib
+    fuse3
     dconf
     xdg-utils
     gtk3
@@ -58,5 +59,6 @@
     nodejs_24
     bun
     dotnet-sdk_9
+    jdk21
   ];
 }

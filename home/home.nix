@@ -17,6 +17,7 @@
     ./programs/mpv.nix
     ./programs/lsd.nix
     ./programs/fastfetch.nix
+    ./programs/minecraft.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix

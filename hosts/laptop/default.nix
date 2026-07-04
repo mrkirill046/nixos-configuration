@@ -25,6 +25,7 @@
     ../../modules/programs/fish.nix
     ../../modules/programs/uv.nix
     ../../modules/programs/direnv.nix
+    ../../modules/programs/appimage.nix
 
     ../../modules/services/keyring.nix
     ../../modules/services/xwayland.nix
