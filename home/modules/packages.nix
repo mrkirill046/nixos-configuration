@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     # Browsers / Internet
     librewolf
+    tor-browser
     chromium
     ayugram-desktop
 
@@ -18,6 +19,7 @@
     jetbrains.rider
     jetbrains.rust-rover
     jetbrains.datagrip
+    libnotify
 
     # Gaming
     steam

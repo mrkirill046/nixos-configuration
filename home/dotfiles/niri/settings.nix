@@ -40,11 +40,6 @@ in
           };
         };
 
-        focus-follows-mouse = {
-          enable = true;
-          max-scroll-amount = "90%";
-        };
-
         warp-mouse-to-focus.enable = true;
 
         touchpad = {

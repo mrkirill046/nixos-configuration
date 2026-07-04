@@ -35,6 +35,10 @@
       };
     };
 
+    fjordlauncher = {
+      url = "github:unmojang/FjordLauncher";
+    };
+
     mac-style-plymouth = {
       url = "github:SergioRibera/s4rchiso-plymouth-theme";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -46,38 +50,47 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs:
-  {
-    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+  outputs =
+    {
+      nixpkgs,
+      home-manager,
+      fjordlauncher,
+      ...
+    }@inputs:
+    {
+      nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
 
-      modules = [
-        ({ ... }: {
-          nixpkgs.overlays = [
-            inputs.mac-style-plymouth.overlays.default
-          ];
-        })
+        modules = [
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [
+              inputs.mac-style-plymouth.overlays.default
+              fjordlauncher.overlays.default
+            ];
 
-        ./hosts/laptop
+            environment.systemPackages = [ pkgs.fjordlauncher ];
+          })
 
-        home-manager.nixosModules.home-manager
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
+          ./hosts/laptop
 
-            users.mrkir = import ./home/home.nix;
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
 
-            extraSpecialArgs = {
-              inherit inputs;
+              users.mrkir = import ./home/home.nix;
+
+              extraSpecialArgs = {
+                inherit inputs;
+              };
             };
-          };
-        }
-      ];
+          }
+        ];
 
-      specialArgs = {
-        inherit inputs;
+        specialArgs = {
+          inherit inputs;
+        };
       };
     };
-  };
 }

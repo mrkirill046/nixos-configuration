@@ -58,6 +58,11 @@
         ];
       };
 
+      control_center = {
+        sidebar = "full";
+        sidebar_section = "full";
+      };
+
       shell = {
         lang = "en";
         font_family = "TeX Gyre Heros";
