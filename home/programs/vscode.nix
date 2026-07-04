@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, ... }:
 
 {
   home.file.".vscode/extensions/mrkir.raiden-theme" = {
@@ -9,7 +9,7 @@
   programs.vscode = {
     enable = true;
     mutableExtensionsDir = true;
-    
+
     profiles.default = {
       keybindings = [
         {
@@ -59,20 +59,20 @@
           enable = {
             "*" = false;
           };
-          
+
           inlineSuggest.enable = false;
         };
 
         workbench = {
           colorTheme = "Raiden Theme";
           iconTheme = "material-icon-theme";
-          
+
           tree = {
             indent = 14;
 
             renderIndentGuides = "none";
           };
-          
+
           sideBar.location = "right";
           activityBar.location = "hidden";
 
@@ -102,7 +102,7 @@
           overviewRulerBorder = false;
           detectIndentation = false;
           hideCursorInOverviewRuler = true;
-          
+
           occurrencesHighlight = "off";
           matchBrackets = "never";
         };
@@ -125,8 +125,35 @@
           nix = true;
         };
 
+        nix = {
+          enableLanguageServer = true;
+          serverPath = "nixd";
+
+          serverSettings = {
+            nixd = {
+              formatting = {
+                command = [ "nixfmt" ];
+              };
+              options = {
+                nixos = {
+                  expr = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.laptop.options";
+                };
+
+                home-manager = {
+                  expr = "(builtins.getFlake \"\${workspaceFolder}\").homeConfigurations.mrkir.options";
+                };
+              };
+            };
+          };
+        };
+
         "[nix]" = {
-          editor.tabSize = 2;
+          editor = {
+            tabSize = 2;
+
+            defaultFormatter = "jnoortheen.nix-ide";
+            formatOnSave = true;
+          };
         };
         "[json]" = {
           editor.tabSize = 2;

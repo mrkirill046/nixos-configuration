@@ -4,7 +4,11 @@
 
     settings = {
       manager = {
-        ratio = [ 1 3 4 ];
+        ratio = [
+          1
+          2
+          5
+        ];
         sort_by = "name";
         sort_sensitive = false;
         sort_reverse = false;
@@ -14,19 +18,46 @@
 
       opener = {
         edit = [
-          { run = "\${EDITOR:-nano} \"$@\""; block = true; for = "unix"; }
+          {
+            run = "\${EDITOR:-nano} \"$@\"";
+            block = true;
+            for = "unix";
+          }
         ];
         play = [
-          { run = "mpv \"$@\""; orphan = true; for = "unix"; }
+          {
+            run = "mpv \"$@\"";
+            orphan = true;
+            for = "unix";
+          }
+        ];
+        show = [
+          {
+            run = "loupe \"$@\"";
+            orphan = true;
+            for = "unix";
+          }
         ];
       };
 
       open = {
         rules = [
-          { url = ".*\\.json$"; use = "edit"; }
-          { mime = "text/*"; use = "edit"; }
-          { mime = "image/*"; use = "play"; }
-          { mime = "video/*"; use = "play"; }
+          {
+            url = ".*\\.json$";
+            use = "edit";
+          }
+          {
+            mime = "text/*";
+            use = "edit";
+          }
+          {
+            mime = "image/*";
+            use = "show";
+          }
+          {
+            mime = "video/*";
+            use = "play";
+          }
         ];
       };
 

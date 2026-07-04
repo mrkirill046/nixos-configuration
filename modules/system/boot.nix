@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   boot.consoleLogLevel = 0;
@@ -10,8 +10,8 @@
     enable = true;
     device = "nodev";
     efiSupport = true;
-    useOSProber = true; 
-    configurationLimit = 5; 
+    useOSProber = true;
+    configurationLimit = 5;
 
     theme = "${pkgs.catppuccin-grub}";
   };
@@ -51,8 +51,8 @@
 
   boot.plymouth = {
     enable = true;
-    
-      theme = "mac-style";
-      themePackages = [ pkgs.mac-style-plymouth ];
+
+    theme = "mac-style";
+    themePackages = [ pkgs.mac-style-plymouth ];
   };
 }

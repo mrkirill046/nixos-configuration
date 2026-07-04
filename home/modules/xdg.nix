@@ -4,9 +4,9 @@
   xdg.portal = {
     enable = true;
 
-    config.common.default = "*"; 
-    
-    extraPortals = [ 
+    config.common.default = [ "gtk" ];
+
+    extraPortals = [
       pkgs.xdg-desktop-portal-gtk
     ];
   };
@@ -15,7 +15,7 @@
     enable = true;
 
     defaultApplications = {
-      "text/html" = [ "librewolf.desktop"];
+      "text/html" = [ "librewolf.desktop" ];
       "x-scheme-handler/http" = [ "librewolf.desktop" ];
       "x-scheme-handler/https" = [ "librewolf.desktop" ];
       "x-scheme-handler/about" = [ "librewolf.desktop" ];
@@ -54,7 +54,7 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
-    
+
     download = "$HOME/Downloads";
     documents = "$HOME/Documents";
     pictures = "$HOME/Pictures";

@@ -11,6 +11,8 @@
     vscode
     unityhub
     obsidian
+    nixfmt
+    nixd
     jetbrains.webstorm
     jetbrains.pycharm
     jetbrains.rider

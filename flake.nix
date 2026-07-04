@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    nixcord.url = "github:kaylorben/nixcord"; 
+    nixcord.url = "github:kaylorben/nixcord";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -28,13 +28,13 @@
 
     nix-gaming = {
       url = "github:fufexan/nix-gaming";
-      
+
       inputs = {
         nixpkgs.follows = "nixpkgs";
         flake-parts.follows = "flake-parts";
       };
     };
-    
+
     mac-style-plymouth = {
       url = "github:SergioRibera/s4rchiso-plymouth-theme";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -46,12 +46,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, niri, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, ... }@inputs:
+  {
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
       modules = [
-        ({ config, pkgs, ... }: {
+        ({ ... }: {
           nixpkgs.overlays = [
             inputs.mac-style-plymouth.overlays.default
           ];

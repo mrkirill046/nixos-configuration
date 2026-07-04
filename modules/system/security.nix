@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -22,6 +20,6 @@
 
   security.polkit.enable = true;
   security.rtkit.enable = true;
-  
+
   security.pam.services.greetd.enableGnomeKeyring = true;
 }

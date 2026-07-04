@@ -10,7 +10,7 @@
       theme = {
         mode = "dark";
         source = "custom";
-        custom_palette = "raiden-theme"; 
+        custom_palette = "raiden-theme";
 
         templates = {
           enable_builtin_templates = true;
