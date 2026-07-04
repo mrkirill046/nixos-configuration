@@ -118,6 +118,7 @@
         explorer = {
           confirmDelete = false;
           confirmDragAndDrop = false;
+          confirmPasteNative = false;
         };
 
         codeium.enableConfig = {

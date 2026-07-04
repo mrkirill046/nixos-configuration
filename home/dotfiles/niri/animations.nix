@@ -16,7 +16,8 @@
       };
     };
 
-    window-resize = { # https://github.com/Xansidev/nirimation
+    window-resize = {
+      # https://github.com/Xansidev/nirimation
       custom-shader = ''
         vec4 resize_color(vec3 coords_curr_geo, vec3 size_curr_geo) {
             vec3 coords_tex_next = niri_geo_to_tex_next * coords_curr_geo;
@@ -55,7 +56,8 @@
       epsilon = 0.0001;
     };
 
-    window-open = { # https://github.com/Xansidev/nirimation
+    window-open = {
+      # https://github.com/Xansidev/nirimation
       kind.easing = {
         duration-ms = 500;
         curve = "ease-out-expo";
@@ -86,6 +88,7 @@
     };
 
     window-close = {
+      # https://github.com/Xansidev/nirimation
       kind.easing = {
         duration-ms = 500;
         curve = "linear";

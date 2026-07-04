@@ -82,6 +82,8 @@
         screenshot = {
           directory = "${config.home.homeDirectory}/Pictures/Screenshots";
         };
+
+        screen_corners.enabled = true;
       };
     };
   };

@@ -15,6 +15,8 @@
     ./programs/nixcord.nix
     ./programs/yazi.nix
     ./programs/mpv.nix
+    ./programs/lsd.nix
+    ./programs/fastfetch.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix
