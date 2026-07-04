@@ -32,6 +32,7 @@
             "discord"
             "vscode"
             "obsidian"
+            "yazi"
           ];
         };
       };

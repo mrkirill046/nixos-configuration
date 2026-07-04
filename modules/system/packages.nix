@@ -5,11 +5,15 @@
     # Desktop / GUI base
     ghostty
     nautilus
+    gnome-text-editor
+    mpv
+    amberol
 
     # Filesystem / compatibility
     distrobox
     ntfs3g
     gvfs
+    unar
     glib
     dconf
     xdg-utils
@@ -20,6 +24,8 @@
     # File previews / GUI utilities
     ffmpegthumbnailer
     file-roller
+    poppler
+    unar
     loupe
 
     # Wayland / X11 bridge

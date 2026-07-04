@@ -13,6 +13,8 @@
     ./programs/vscode.nix
     ./programs/ghostty.nix
     ./programs/nixcord.nix
+    ./programs/yazi.nix
+    ./programs/mpv.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix

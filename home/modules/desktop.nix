@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
   gtk = {
@@ -19,6 +19,14 @@
       package = pkgs.material-cursors;
       size = 24;
     };
+
+    gtk3.bookmarks = [
+      "file://${config.home.homeDirectory}/Downloads"
+      "file://${config.home.homeDirectory}/Documents"
+      "file://${config.home.homeDirectory}/Pictures"
+      "file://${config.home.homeDirectory}/Videos"
+      "file://${config.home.homeDirectory}/Music"
+    ];
   };
 
   qt = {

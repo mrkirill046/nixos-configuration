@@ -10,6 +10,7 @@
     # Dev / IDE / Tools
     vscode
     unityhub
+    obsidian
     jetbrains.webstorm
     jetbrains.pycharm
     jetbrains.rider
@@ -30,7 +31,6 @@
     mpvpaper
 
     # GUI system tools
-    gnome-control-center
     networkmanagerapplet
     blueman
 
