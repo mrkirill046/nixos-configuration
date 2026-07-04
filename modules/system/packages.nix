@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     # Desktop / GUI base
-    alacritty
+    ghostty
     nautilus
 
     # Filesystem / compatibility
@@ -32,13 +32,6 @@
 
     # Login manager / themes
     material-cursors
-
-    # Fonts
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-    jetbrains-mono
-    nerd-fonts.jetbrains-mono
 
     # Security / auth
     polkit

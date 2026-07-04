@@ -1,3 +1,5 @@
+{ config, ... }:
+
 {
   programs.noctalia = {
     enable = true;
@@ -22,7 +24,7 @@
             "gtk4"
             "kcolorscheme"
             "qt"
-            "alacritty"
+            "ghostty"
             "starship"
           ];
 
@@ -56,12 +58,24 @@
       };
 
       shell = {
+        lang = "en";
+        font_family = "TeX Gyre Heros";
+
+        time_format = "{:%I:%M %p}";
+        date_format = "%A, %d %B";
+
+        corner_radius_scale = 2;
+
         panel = {
           launcher_position = "bottom_center";
         };
 
         launcher = {
           session_search = true;
+        };
+
+        screenshot = {
+          directory = "{config.home.homeDirectory}/Pictures/Screenshots";
         };
       };
     };

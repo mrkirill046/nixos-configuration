@@ -5,6 +5,7 @@
   
   let
     fullscreen-screenshot = spawn "sh" "-c" "noctalia msg screenshot-fullscreen";
+    terminal = spawn "${pkgs.ghostty}/bin/ghostty";
   in 
   {
     ### Noctalia shell 
@@ -65,9 +66,21 @@
       hotkey-overlay.title = "Toggle control center";
       action = spawn "sh" "-c" "noctalia msg panel-toggle control-center";
     };
+
     "Mod+Shift+R" = {
       hotkey-overlay.title = "Reload Noctalia";
       action = spawn "sh" "-c" "noctalia msg config-reload";
+    };
+
+    # Session
+    "Mod+L" = {
+      hotkey-overlay.title = "Lock the screen";
+      action = spawn "sh" "-c" "noctalia msg session lock";
+    };
+
+    "Ctrl+Alt+Delete" = {
+      hotkey-overlay.title = "Show session menu";
+      action = spawn "sh" "-c" "noctalia msg panel-open session";
     };
 
     # Window management
@@ -90,10 +103,19 @@
       action = fullscreen-screenshot;
     };
 
+    ### Apps
+    "Mod+Return" = {
+      hotkey-overlay.title = "Open terminal";
+      action = terminal;
+    };
+    "Mod+T" = {
+      hotkey-overlay.title = "Open terminal";
+      action = terminal;
+    };
+
     ### Other
     
-    "Mod+Return".action = spawn "${pkgs.alacritty}/bin/alacritty";
-    "Ctrl+Alt+L".action = spawn "sh" "-c" "hyprlock";
+    
 
     "Mod+Slash".action = { show-hotkey-overlay = [ ]; };
 
@@ -120,10 +142,8 @@
     "Mod+Shift+Minus".action = set-window-height "-10%";
     "Mod+Shift+Equal".action = set-window-height "+10%";
 
-    "Ctrl+Alt+Delete".action = quit;
-
     "Mod+H".action = focus-column-left;
-    "Mod+L".action = focus-column-right;
+    # "Mod+L".action = focus-column-right;
     "Mod+J".action = focus-window-or-workspace-down;
     "Mod+K".action = focus-window-or-workspace-up;
     "Mod+Left".action = focus-column-left;

@@ -16,6 +16,7 @@
     ../../modules/desktop/graphics.nix
     ../../modules/desktop/sddm.nix
     ../../modules/desktop/niri.nix
+    ../../modules/desktop/fonts.nix
 
     ../../modules/virtualisation/podman.nix
     ../../modules/virtualisation/ollama.nix

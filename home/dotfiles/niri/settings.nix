@@ -62,6 +62,7 @@ in
         {command = ["steam" "-silent"];}
         {command = ["AyuGram" "-startintray"];}
         {command = ["gtk-launch" "arch-koala-clash"];}
+        {command = ["nautilus" "--gapplication-service"];}
       ];
 
       outputs = {

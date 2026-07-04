@@ -26,15 +26,8 @@
     wl-clipboard
     cliphist
 
-    # Screenshots / screen tools
-    grim
-    slurp
-
     # Media / wallpapers
     mpvpaper
-
-    # Lock screen
-    hyprlock
 
     # GUI system tools
     gnome-control-center
