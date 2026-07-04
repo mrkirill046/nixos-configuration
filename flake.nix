@@ -26,6 +26,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Idk what this does
     nix-gaming = {
       url = "github:fufexan/nix-gaming";
 
@@ -60,20 +61,13 @@
           })
 
           ./hosts/laptop
-          ./hosts/laptop
 
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
 
-              users.mrkir = import ./home/home.nix;
               users.mrkir = import ./home/home.nix;
 
               extraSpecialArgs = {
@@ -82,18 +76,7 @@
             };
           }
         ];
-              extraSpecialArgs = {
-                inherit inputs;
-              };
-            };
-          }
-        ];
 
-        specialArgs = {
-          inherit inputs;
-        };
-      };
-    };
         specialArgs = {
           inherit inputs;
         };
