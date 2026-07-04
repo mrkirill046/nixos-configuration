@@ -80,7 +80,7 @@
         };
 
         screenshot = {
-          directory = "{config.home.homeDirectory}/Pictures/Screenshots";
+          directory = "${config.home.homeDirectory}/Pictures/Screenshots";
         };
       };
     };

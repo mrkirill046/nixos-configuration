@@ -5,5 +5,6 @@
     ./settings.nix
     ./layout.nix
     ./startup.nix
+    ./animations.nix
   ];
 }

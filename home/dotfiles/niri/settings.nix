@@ -20,6 +20,12 @@ in
 
   programs.niri = {
     settings = {
+      prefer-no-csd = true;
+      
+      gestures = {
+        hot-corners.enable = false;
+      };
+
       hotkey-overlay = {
         skip-at-startup = true;
       };
@@ -32,6 +38,25 @@ in
             layout = "us,ru";
             options = "grp:win_space_toggle";
           };
+        };
+
+        focus-follows-mouse = {
+          enable = true;
+          max-scroll-amount = "90%";
+        };
+
+        warp-mouse-to-focus.enable = true;
+
+        touchpad = {
+          click-method = "button-areas";
+          dwt = true;
+          dwtp = true;
+          natural-scroll = true;
+          scroll-method = "two-finger";
+          tap = true;
+          tap-button-map = "left-right-middle";
+          middle-emulation = true;
+          accel-profile = "adaptive";
         };
       };
 
