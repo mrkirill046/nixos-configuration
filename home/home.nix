@@ -21,10 +21,9 @@
   home.stateVersion = "26.05";
 
   home.pointerCursor = {
-    name = "material-cursors";
+    name = "material_cursors";
     package = pkgs.material-cursors;
-    size = 24;
-
+    size = 32;
 
     gtk.enable = true;
     x11.enable = true;

@@ -1,9 +1,23 @@
-{ config, pkgs, inputs, ... }: 
+{ config, pkgs, inputs, lib, ... }: 
 
 let
   pointer = config.home.pointerCursor;
 in 
 {
+  # FUCKING SHIT NIRI-FLAKE DOESN'T SUPPORT FUCKING recent-windows PARAMETER BLYAT
+  home.file.".config/niri/config.kdl".text = ''
+    include "extra.kdl"
+    include "nix-generated.kdl"
+  '';
+
+  home.file.".config/niri/extra.kdl".text = ''
+    recent-windows {
+      off
+    }
+  '';
+
+  xdg.configFile.niri-config.target = lib.mkForce "niri/nix-generated.kdl";
+
   programs.niri = {
     settings = {
       hotkey-overlay = {
@@ -30,8 +44,8 @@ in
         QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
         SDL_VIDEODRIVER = "wayland";
 
-        XCURSOR_THEME = "material-cursors";
-        XCURSOR_SIZE = "24";
+        XCURSOR_THEME = pointer.name;
+        XCURSOR_SIZE = toString pointer.size;
       };
 
       spawn-at-startup = [
@@ -61,8 +75,8 @@ in
       };
 
       cursor = {
-        size = 24;
-        theme = "${pointer.name}";
+        size = pointer.size;
+        theme = pointer.name;
       };
     };
   };

@@ -29,6 +29,7 @@
         prisma.prisma
         ms-azuretools.vscode-docker
         vue.volar
+        christian-kohler.path-intellisense
       ];
 
       userSettings = {
@@ -108,6 +109,7 @@
 
         codeium.enableConfig = {
           "*" = true;
+          nix = true;
         };
 
         "[nix]" = {
