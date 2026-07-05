@@ -14,11 +14,10 @@ in
     recent-windows {
       off
     }
-    
+
     window-rule {
       background-effect {
         blur true
-        xray false
       }
     }
   '';

@@ -4,6 +4,31 @@
 
     settings = {
       wallpaper.enabled = false;
+      calendar.enabled = true;
+
+      idle = {
+        pre_action_fade_seconds = 0;
+
+        behavior_order = [ "lock" "screen-off" ];
+
+        behavior.lock = {
+          action = "lock";
+          enabled = true;
+          timeout = 900;
+        };
+
+        behavior.screen-off = {
+          action = "screen_off";
+          enabled = true;
+          timeout = 1800.0;
+        };
+      };
+
+      audio = {
+        enable_overdrive = true;
+        enable_sounds = true;
+        sound_volume = 1;
+      };
 
       theme = {
         mode = "dark";

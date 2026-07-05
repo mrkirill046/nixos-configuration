@@ -6,8 +6,6 @@
       "noctalia/mpvpaper"
     ];
 
-    settings.
-
     source = [
       {
         name = "official";

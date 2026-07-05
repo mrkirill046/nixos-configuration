@@ -6,7 +6,5 @@
     ./layout.nix
     ./startup.nix
     ./animations.nix
-
-    ./idle.nix
   ];
 }
