@@ -14,6 +14,13 @@ in
     recent-windows {
       off
     }
+    
+    window-rule {
+      background-effect {
+        blur true
+        xray false
+      }
+    }
   '';
 
   xdg.configFile.niri-config.target = lib.mkForce "niri/nix-generated.kdl";

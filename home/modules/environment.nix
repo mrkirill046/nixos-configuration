@@ -7,7 +7,6 @@
     BROWSER = "librewolf";
     DEFAULT_BROWSER = "librewolf";
     GTK_USE_PORTAL = "1";
-    QT_QPA_PLATFORMTHEME = "xdgdesktopportal";
     QT_USE_PORTAL = "1";
   };
 }

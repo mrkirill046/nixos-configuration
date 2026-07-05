@@ -15,6 +15,8 @@
             top-left = radius;
             top-right = radius;
           };
+
+        opacity = 0.95;
       }
       {
         matches = [ { is-floating = true; } ];

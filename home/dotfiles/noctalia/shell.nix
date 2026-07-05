@@ -27,5 +27,6 @@
     };
 
     screen_corners.enabled = true;
+    screen_time_enabled = true;
   };
 }
