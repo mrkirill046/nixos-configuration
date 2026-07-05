@@ -28,6 +28,7 @@
     gamemode
     mangohud
     goverlay
+    vkbasalt
 
     # Clipboard / productivity
     wl-clipboard
