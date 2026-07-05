@@ -4,6 +4,9 @@
   programs.noctalia.settings.plugins = {
     enabled = [
       "noctalia/mpvpaper"
+      "noctalia/translator"
+      "noctalia/kaomoji"
+      "noctalia/notes"
     ];
 
     source = [

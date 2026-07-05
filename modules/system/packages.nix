@@ -23,6 +23,8 @@
     libxshmfence
     libsForQt5.qt5ct
     qt6Packages.qt6ct
+    dxvk
+    meson
 
     # File previews / GUI utilities
     ffmpegthumbnailer

@@ -52,8 +52,10 @@
       "x-gvfs-show"
       "uid=1000"
       "gid=100"
-      "umask=022"
-      "windows_names"
+      "fmask=113"
+      "dmask=002"
+      "exec"
+      "rw"
     ];
   };
 

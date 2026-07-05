@@ -23,6 +23,7 @@
 
     # Gaming
     steam
+    steam-run
 
     # Mods / tweaks
     gamemode

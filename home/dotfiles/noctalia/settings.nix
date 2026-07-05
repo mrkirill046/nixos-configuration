@@ -20,7 +20,7 @@
         behavior.screen-off = {
           action = "screen_off";
           enabled = true;
-          timeout = 1800.0;
+          timeout = 1800;
         };
       };
 
