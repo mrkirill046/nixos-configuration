@@ -26,7 +26,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Idk what this does
     nix-gaming = {
       url = "github:fufexan/nix-gaming";
 
