@@ -110,15 +110,11 @@
       }
       {
         matches = [ { app-id = "xdg-desktop-portal-gtk"; } ];
-        
+
         open-floating = true;
 
         default-column-width.fixed = 800;
         default-window-height.fixed = 600;
-      }
-      {
-        matches = [ { app-id = "pinentry"; } ];
-        open-floating = true;
       }
       {
         matches = [ { title = "Progress"; } ];
@@ -138,10 +134,6 @@
       }
       {
         matches = [ { title = "Properties"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Downloads"; } ];
         open-floating = true;
       }
       {
@@ -170,7 +162,7 @@
       }
       {
         matches = [
-          { 
+          {
             app-id = "org.gnome.Nautilus";
             title = "^.*(File Upload|Choose Files).*$";
           }

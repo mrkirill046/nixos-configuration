@@ -90,6 +90,11 @@
         action = spawn "sh" "-c" "noctalia msg panel-toggle clipboard";
       };
 
+      "Mod+Shift+W" = {
+        hotkey-overlay.title = "Show video wallpaper panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle noctalia/mpvpaper:picker";
+      };
+
       # Window management
       "Mod+Tab" = {
         hotkey-overlay.title = "Show window switcher";
@@ -137,6 +142,11 @@
       "Mod+C" = {
         hotkey-overlay.title = "Open code editor";
         action = spawn "${pkgs.vscode}/bin/code";
+      };
+
+      "Ctrl+Shift+Escape" = {
+        hotkey-overlay.title = "Open mission center";
+        action = spawn "${pkgs.mission-center}/bin/missioncenter";
       };
 
       ### Other

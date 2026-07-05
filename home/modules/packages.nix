@@ -40,6 +40,7 @@
     # GUI system tools
     networkmanagerapplet
     blueman
+    mission-center
 
     # Bluetooth stack (user tools)
     bluez

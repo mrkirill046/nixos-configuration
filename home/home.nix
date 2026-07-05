@@ -9,6 +9,7 @@
     ./modules/desktop.nix
     ./modules/environment.nix
     ./modules/xdg.nix
+    ./modules/kdeconnect.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix

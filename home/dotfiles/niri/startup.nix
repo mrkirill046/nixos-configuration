@@ -25,17 +25,6 @@
     }
     {
       command = [
-        "mpvpaper"
-        "--layer"
-        "background"
-        "-o"
-        "--loop --no-audio --hwdec=auto --fullscreen --video-sync=display-resample --gpu-context=x11egl"
-        "eDP-1"
-        "/home/mrkir/Videos/Wallpapers/wallpaper-1080p.mp4"
-      ];
-    }
-    {
-      command = [
         "sh"
         "-c"
         "sleep 5 && discord --start-minimized"
