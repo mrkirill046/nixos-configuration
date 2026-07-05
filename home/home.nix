@@ -19,7 +19,6 @@
     ./programs/fastfetch.nix
     ./programs/minecraft.nix
     ./programs/obs.nix
-    ./programs/obs.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix
