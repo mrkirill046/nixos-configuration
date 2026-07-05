@@ -78,6 +78,8 @@
 
         panel = {
           launcher_position = "bottom_center";
+
+          open_near_click_control_center = true;
         };
 
         launcher = {
@@ -89,6 +91,90 @@
         };
 
         screen_corners.enabled = true;
+      };
+
+      widget = {
+        bluetooth = {
+          hide_when_no_connected_device = true;
+        };
+
+        active_window = {
+          icon_size = 18;
+          show_empty_label = true;
+          title_scroll = "always";
+        };
+
+        clock = {
+          format = "{:%I:%M %p}";
+          tooltip_format = "{:%A, %d %B}";
+        };
+
+        spacer_2.type = "spacer";
+        spacer_3.type = "spacer";
+        spacer_4.type = "spacer";
+        spacer_5.type = "spacer";
+        spacer_6.type = "spacer";
+        spacer_7.type = "spacer";
+
+        weather = {
+          show_condition = false;
+        };
+
+        media = {
+          art_size = 18;
+          hide_when_no_media = true;
+          title_scroll = "always";
+        };
+
+        workspaces = {
+          empty_color = "outline";
+          occupied_color = "tertiary";
+
+          labels_only_when_occupied = true;
+        };
+      };
+
+      location = {
+        address = "Kursk, Russia";
+      };
+
+      bar.default = {
+        background_opacity = 0.5;
+        scale = 1.3;
+        margin_ends = 15;
+        padding = 18;
+        thickness = 48;
+        radius = 80;
+
+        start = [
+          "workspaces"
+          "spacer_2"
+          "active_window"
+          "spacer_3"
+          "media"
+        ];
+        center = [
+          "caffeine"
+          "clock"
+        ];
+        end = [
+          "audio_visualizer"
+          "spacer_7"
+          "weather"
+          "spacer_6"
+          "bluetooth"
+          "network"
+          "spacer_5"
+          "brightness"
+          "battery"
+          "spacer_4"
+          "tray"
+        ];
+
+        dead_zone = {
+          scroll_down_command = "noctalia msg volume-down";
+          scroll_up_command = "noctalia msg volume-up";
+        };
       };
     };
   };
