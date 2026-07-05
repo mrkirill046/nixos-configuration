@@ -23,6 +23,7 @@
 
     # Gaming
     steam
+    mangohud
 
     # Mods / tweaks
     gamemode
