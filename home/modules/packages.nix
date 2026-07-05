@@ -23,10 +23,11 @@
 
     # Gaming
     steam
-    mangohud
 
     # Mods / tweaks
     gamemode
+    mangohud
+    goverlay
 
     # Clipboard / productivity
     wl-clipboard
