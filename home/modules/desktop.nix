@@ -27,6 +27,9 @@
       "file://${config.home.homeDirectory}/Videos"
       "file://${config.home.homeDirectory}/Music"
     ];
+
+    gtk3.extraCss = builtins.readFile ../../assets/gtk/3/noctalia.css;
+    gtk4.extraCss = builtins.readFile ../../assets/gtk/4/noctalia.css;
   };
 
   qt = {

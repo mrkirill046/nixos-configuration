@@ -4,10 +4,20 @@
   xdg.portal = {
     enable = true;
 
-    config.common.default = [ "gtk" ];
+    config = {
+      common = {
+        default = [ "gnome" ];
 
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
+        "org.freedesktop.impl.portal.FileChooser" = [ "gnome" ];
+      };
+      niri = {
+        "org.freedesktop.impl.portal.FileChooser" = [ "gnome" ];
+      };
+    };
+
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
     ];
   };
 
