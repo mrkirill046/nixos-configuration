@@ -154,6 +154,10 @@
         show-hotkey-overlay = [ ];
       };
 
+      "F11".action = {
+        fullscreen-window = { };
+      };
+
       "Mod+Q".action = close-window;
       "Mod+S".action = switch-preset-column-width;
       "Mod+F".action = maximize-column;
