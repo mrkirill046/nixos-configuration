@@ -3,46 +3,53 @@
 let
   sddm-astronaut =
     (pkgs.sddm-astronaut.override {
-      embeddedTheme = "japanese_aesthetic";
+      embeddedTheme = "astronaut";
 
       themeConfig = {
-        HeaderTextColor = "#d8d8ff";
-        DateTextColor = "#d8d8ff";
-        TimeTextColor = "#d8d8ff";
+        FontSize = "10";
+        FormPosition = "left";
 
-        FormBackgroundColor = "#242455";
-        BackgroundColor = "#242455";
-        DimBackgroundColor = "#242455";
+        HourFormat = "hh:mm AP";
+        DateFormat = "MMMM, d";
 
-        LoginFieldBackgroundColor = "#d8d8ff";
-        PasswordFieldBackgroundColor = "#d8d8ff";
-        LoginFieldTextColor = "#d8d8ff";
-        PasswordFieldTextColor = "#d8d8ff";
-        UserIconColor = "#d8d8ff";
-        PasswordIconColor = "#d8d8ff";
+        HeaderTextColor = "#e9e0e8";
+        DateTextColor = "#e9e0e8";
+        TimeTextColor = "#e9e0e8";
 
-        PlaceholderTextColor = "#6c6caa";
-        WarningColor = "#d8d8ff";
+        FormBackgroundColor = "#221e24";
+        BackgroundColor = "#161217";
+        DimBackgroundColor = "#161217";
 
-        LoginButtonTextColor = "#6c6caa";
-        LoginButtonBackgroundColor = "#d8d8ff";
-        SystemButtonsIconsColor = "#d8d8ff";
-        SessionButtonTextColor = "#d8d8ff";
-        VirtualKeyboardButtonTextColor = "#d8d8ff";
+        LoginFieldBackgroundColor = "#221e24";
+        PasswordFieldBackgroundColor = "#221e24";
+        LoginFieldTextColor = "#e9e0e8";
+        PasswordFieldTextColor = "#e9e0e8";
+        UserIconColor = "#dfb8f6";
+        PasswordIconColor = "#dfb8f6";
 
-        DropdownTextColor = "#6c6caa";
-        DropdownSelectedBackgroundColor = "#f8f8ff";
-        DropdownBackgroundColor = "#d8d8ff";
+        PlaceholderTextColor = "#b8adb8";
+        WarningColor = "#ffb4ab";
 
-        HighlightTextColor = "#484855";
-        HighlightBackgroundColor = "#d8d8ff";
+        LoginButtonTextColor = "#412356";
+        LoginButtonBackgroundColor = "#dfb8f6";
+
+        SystemButtonsIconsColor = "#e9e0e8";
+        SessionButtonTextColor = "#e9e0e8";
+        VirtualKeyboardButtonTextColor = "#e9e0e8";
+
+        DropdownTextColor = "#412356";
+        DropdownSelectedBackgroundColor = "#dfb8f6";
+        DropdownBackgroundColor = "#221e24";
+
+        HighlightTextColor = "#412356";
+        HighlightBackgroundColor = "#dfb8f6";
         HighlightBorderColor = "transparent";
 
-        HoverUserIconColor = "#6c6caa";
-        HoverPasswordIconColor = "#6c6caa";
-        HoverSystemButtonsIconsColor = "#6c6caa";
-        HoverSessionButtonTextColor = "#6c6caa";
-        HoverVirtualKeyboardButtonTextColor = "#6c6caa";
+        HoverUserIconColor = "#e9e0e8";
+        HoverPasswordIconColor = "#e9e0e8";
+        HoverSystemButtonsIconsColor = "#dfb8f6";
+        HoverSessionButtonTextColor = "#dfb8f6";
+        HoverVirtualKeyboardButtonTextColor = "#dfb8f6";
 
         HeaderText = "Hello, Kirill!";
         Background = "Backgrounds/my-custom-background.mp4";

@@ -57,6 +57,7 @@
           { app-id = "librewolf"; }
           { app-id = "Tor Browser"; }
           { app-id = "chromium-browser"; }
+          { app-id = "obsidian"; }
         ];
 
         open-maximized = true;
@@ -166,9 +167,11 @@
         matches = [
           {
             app-id = "org.gnome.Nautilus";
-            title = "^.*(File Upload|Choose Files).*$";
+            title = "^.*(File Upload|Choose Files|Open folder).*$";
           }
         ];
+
+        open-floating = true;
 
         default-column-width.fixed = 800;
         default-window-height.fixed = 600;

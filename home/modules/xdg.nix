@@ -40,6 +40,7 @@
       "x-scheme-handler/https" = [ "librewolf.desktop" ];
       "x-scheme-handler/about" = [ "librewolf.desktop" ];
       "application/xhtml+xml" = [ "librewolf.desktop" ];
+      "application/x-desktop" = [ "dex.desktop" ];
 
       "image/jpeg" = [ "org.gnome.Loupe.desktop" ];
       "image/png" = [ "org.gnome.Loupe.desktop" ];

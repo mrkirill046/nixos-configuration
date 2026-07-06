@@ -40,6 +40,9 @@ in
         keyboard = {
           numlock = true;
 
+          repeat-delay = 300;
+          repeat-rate = 40;
+
           xkb = {
             layout = "us,ru";
             options = "grp:win_space_toggle";

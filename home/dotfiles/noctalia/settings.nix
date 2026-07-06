@@ -1,10 +1,21 @@
+{ config, ... }:
+
 {
   programs.noctalia = {
     enable = true;
 
     settings = {
-      wallpaper.enabled = false;
       calendar.enabled = true;
+
+      wallpaper = {
+        enabled = true;
+
+        default = {
+          path = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";  
+          last = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";  
+          monitors.eDP-1 = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
+        };  
+      };
 
       idle = {
         pre_action_fade_seconds = 0;
@@ -48,13 +59,11 @@
             "kcolorscheme"
             "qt"
             "ghostty"
-            "starship"
           ];
 
           community_ids = [
             "discord"
             "vscode"
-            "obsidian"
             "yazi"
           ];
         };

@@ -60,9 +60,18 @@
     cava
     dust
     duf
+    dex
 
     # Icons / themes
     adwaita-icon-theme
     hicolor-icon-theme
+
+    (makeDesktopItem {
+      name = "dex";
+      desktopName = "Dex Launcher";
+      exec = "dex %f";
+      terminal = false;
+      mimeTypes = [ "application/x-desktop" ];
+    })
   ];
 }

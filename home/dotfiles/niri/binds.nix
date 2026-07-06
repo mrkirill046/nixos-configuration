@@ -110,7 +110,7 @@
         hotkey-overlay.title = "Take fullscreen screenshot";
         action = fullscreen-screenshot;
       };
-      "Win+Shift+P" = {
+      "Mod+Shift+P" = {
         hotkey-overlay.title = "Take fullscreen screenshot";
         action = fullscreen-screenshot;
       };
@@ -149,53 +149,65 @@
         action = spawn "${pkgs.mission-center}/bin/missioncenter";
       };
 
-      ### Other
+      ### Window management
+      # Core window actions
       "Mod+Slash".action = {
         show-hotkey-overlay = [ ];
       };
 
+      "Mod+Q".action = close-window;
+      "Mod+W".action = toggle-column-tabbed-display;
+      "Mod+F".action = toggle-window-floating;
+      "Mod+O".action = toggle-overview;
+      "Alt+Tab".action = switch-focus-between-floating-and-tiling;
+      "Mod+Shift+C".action = center-visible-columns;
+
+      # Fullscreen window
       "F11".action = {
         fullscreen-window = { };
       };
 
-      "Mod+Q".action = close-window;
-      "Mod+S".action = switch-preset-column-width;
-      "Mod+F".action = maximize-column;
+      "Mod+Shift+F".action = maximize-column;
 
+      # Set column width / height
       "Mod+1".action = set-column-width "25%";
       "Mod+2".action = set-column-width "50%";
       "Mod+3".action = set-column-width "75%";
       "Mod+4".action = set-column-width "100%";
-      # "Mod+Shift+F".action = fullscreen-window;
-      "Mod+Shift+F".action = expand-column-to-available-width;
-      # "Mod+V".action = toggle-window-floating;
-      "Mod+W".action = toggle-column-tabbed-display;
-
-      "Mod+Comma".action = consume-window-into-column;
-      "Mod+Period".action = expel-window-from-column;
-      # "Mod+C".action = center-visible-columns;
-      "Alt+Tab".action = switch-focus-between-floating-and-tiling;
 
       "Mod+Minus".action = set-column-width "-10%";
       "Mod+Equal".action = set-column-width "+10%";
       "Mod+Shift+Minus".action = set-window-height "-10%";
       "Mod+Shift+Equal".action = set-window-height "+10%";
 
-      "Mod+H".action = focus-column-left;
-      # "Mod+L".action = focus-column-right;
-      "Mod+J".action = focus-window-or-workspace-down;
-      "Mod+K".action = focus-window-or-workspace-up;
+      # Move window
+      "Mod+Ctrl+Up".action = move-window-up;
+      "Mod+Ctrl+Down".action = move-window-down;
+      "Mod+Ctrl+Left".action = move-column-left;
+      "Mod+Ctrl+Right".action = move-column-right;
+
+      "Mod+Ctrl+Alt+Up".action = move-column-to-workspace-up;
+      "Mod+Ctrl+Alt+Down".action = move-column-to-workspace-down;
+
+      "Mod+Comma".action = consume-window-into-column;
+      "Mod+Period".action = expel-window-from-column;
+
+      "Mod+Shift+Ctrl+Down".action = move-column-to-monitor-down;
+      "Mod+Shift+Ctrl+Up".action = move-column-to-monitor-up;
+      "Mod+Shift+Ctrl+Left".action = move-column-to-monitor-left;
+      "Mod+Shift+Ctrl+Right".action = move-column-to-monitor-right;
+
+      # Focus window
       "Mod+Left".action = focus-column-left;
       "Mod+Right".action = focus-column-right;
-      "Mod+Down".action = focus-workspace-down;
-      "Mod+Up".action = focus-workspace-up;
-
-      "Mod+Shift+H".action = move-column-left;
-      "Mod+Shift+L".action = move-column-right;
-      "Mod+Shift+K".action = move-column-to-workspace-up;
-      "Mod+Shift+J".action = move-column-to-workspace-down;
-
-      "Mod+Shift+Ctrl+J".action = move-column-to-monitor-down;
-      "Mod+Shift+Ctrl+K".action = move-column-to-monitor-up;
+      "Mod+Down".action = focus-window-or-workspace-down;
+      "Mod+Up".action = focus-window-or-workspace-up;
+      
+      # Focus workspace
+      "Mod+Alt+Down".action = focus-workspace-down;
+      "Mod+Alt+Up".action = focus-workspace-up;
+      
+      "Mod+WheelScrollDown".action = focus-workspace-down;
+      "Mod+WheelScrollUp".action = focus-workspace-up;
     };
 }

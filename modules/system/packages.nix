@@ -41,7 +41,7 @@
     plymouth
     efibootmgr
 
-    # Login manager / themes
+    # Themes
     material-cursors
 
     # Security / auth
