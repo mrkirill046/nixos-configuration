@@ -19,7 +19,7 @@
       opener = {
         edit = [
           {
-            run = "\${EDITOR:-nano} \"$@\"";
+            run = "\${EDITOR:-nvim} \"$@\"";
             block = true;
             for = "unix";
           }

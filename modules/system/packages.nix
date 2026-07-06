@@ -25,6 +25,8 @@
     qt6Packages.qt6ct
     dxvk
     meson
+    gnumake
+    gcc
 
     # File previews / GUI utilities
     ffmpegthumbnailer
@@ -64,5 +66,6 @@
     bun
     dotnet-sdk_9
     jdk21
+    go
   ];
 }

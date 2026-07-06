@@ -202,11 +202,11 @@
       "Mod+Right".action = focus-column-right;
       "Mod+Down".action = focus-window-or-workspace-down;
       "Mod+Up".action = focus-window-or-workspace-up;
-      
+
       # Focus workspace
       "Mod+Alt+Down".action = focus-workspace-down;
       "Mod+Alt+Up".action = focus-workspace-up;
-      
+
       "Mod+WheelScrollDown".action = focus-workspace-down;
       "Mod+WheelScrollUp".action = focus-workspace-up;
     };

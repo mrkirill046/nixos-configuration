@@ -22,6 +22,7 @@
     ./programs/fastfetch.nix
     ./programs/minecraft.nix
     ./programs/obs.nix
+    ./programs/nvim.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix

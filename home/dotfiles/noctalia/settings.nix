@@ -11,16 +11,19 @@
         enabled = true;
 
         default = {
-          path = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";  
-          last = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";  
+          path = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
+          last = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
           monitors.eDP-1 = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
-        };  
+        };
       };
 
       idle = {
         pre_action_fade_seconds = 0;
 
-        behavior_order = [ "lock" "screen-off" ];
+        behavior_order = [
+          "lock"
+          "screen-off"
+        ];
 
         behavior.lock = {
           action = "lock";
@@ -65,6 +68,7 @@
             "discord"
             "vscode"
             "yazi"
+            "neovim"
           ];
         };
       };
