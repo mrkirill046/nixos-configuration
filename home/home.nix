@@ -10,6 +10,8 @@
     ./modules/environment.nix
     ./modules/xdg.nix
     ./modules/kdeconnect.nix
+    ./modules/starship.nix
+    ./modules/fish.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix

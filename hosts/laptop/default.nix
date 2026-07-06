@@ -22,7 +22,6 @@
     ../../modules/virtualisation/ollama.nix
     ../../modules/virtualisation/docker.nix
 
-    ../../modules/programs/fish.nix
     ../../modules/programs/uv.nix
     ../../modules/programs/direnv.nix
     ../../modules/programs/appimage.nix
