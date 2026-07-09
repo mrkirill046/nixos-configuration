@@ -23,6 +23,10 @@
         shadow.enable = true;
       }
       {
+        matches = [ { app-id = "^steam_app_[0-9]+$"; } ];
+        open-fullscreen = true;
+      }
+      {
         matches = [
           { app-id = "com.mitchellh.ghostty.yazi"; }
         ];
