@@ -22,8 +22,9 @@
     ../../modules/virtualisation/ollama.nix
     ../../modules/virtualisation/docker.nix
 
-    ../../modules/programs/uv.nix
+    ../../modules/programs/nix-ld.nix
     ../../modules/programs/direnv.nix
+    ../../modules/programs/throne.nix
     ../../modules/programs/appimage.nix
 
     ../../modules/services/keyring.nix
