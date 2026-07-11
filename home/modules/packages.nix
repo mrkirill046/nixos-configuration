@@ -33,6 +33,7 @@
 
     # Clipboard / productivity
     wl-clipboard
+    wl-clip-persist
     cliphist
 
     # Media / wallpapers

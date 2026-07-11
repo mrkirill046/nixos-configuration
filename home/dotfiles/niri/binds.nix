@@ -149,6 +149,13 @@
         action = spawn "${pkgs.mission-center}/bin/missioncenter";
       };
 
+      "Mod+Shift+H" = {
+        hotkey-overlay.title = "Toggle handy transcription";
+        action =
+          spawn "sh" "-c"
+            "${config.home.homeDirectory}/Applications/Handy_amd64.AppImage --toggle-transcription";
+      };
+
       ### Window management
       # Core window actions
       "Mod+Slash".action = {

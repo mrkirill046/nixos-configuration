@@ -171,7 +171,7 @@
         matches = [
           {
             app-id = "org.gnome.Nautilus";
-            title = "^.*(File Upload|Choose Files|Open folder).*$";
+            title = "^.*(File Upload|Choose Files|Open folder|Enter name of file to save to).*$";
           }
         ];
 

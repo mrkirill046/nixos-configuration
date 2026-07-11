@@ -2,7 +2,7 @@
 
 {
   home.file.".local/share/icons/hicolor/scalable/apps/pineconemc.svg".source =
-    ../../assets/pineconemc.svg;
+    ../../assets/icons/pineconemc.svg;
 
   home.file.".local/share/applications/pineconemc.desktop".text = ''
     [Desktop Entry]
