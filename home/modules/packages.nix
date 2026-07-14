@@ -20,6 +20,7 @@
     jetbrains.rust-rover
     jetbrains.datagrip
     libnotify
+    onlyoffice-desktopeditors
 
     # Gaming
     steam
