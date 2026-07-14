@@ -58,6 +58,8 @@
       directory = "${config.home.homeDirectory}/Pictures/Screenshots";
     };
 
+    niri_overview_type_to_launch_enabled = true;
+
     screen_corners.enabled = true;
     screen_time_enabled = true;
   };

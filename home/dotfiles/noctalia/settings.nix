@@ -146,14 +146,20 @@
         address = "Kursk, Russia";
       };
 
+      nightlight.enabled = true;
+
       bar.default = {
         background_opacity = 0.5;
         scale = 1.3;
-        margin_ends = 15;
+        margin_ends = 12;
+        margin_edge = 12;
         padding = 18;
         thickness = 48;
         radius = 80;
 
+        concave_edge_corners = false;
+        hover_highlight = false;
+   
         start = [
           "workspaces"
           "spacer_2"
