@@ -4,6 +4,10 @@ let
   noctalia-greeter = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
+  imports = [
+    inputs.noctalia-greeter.nixosModules.default
+  ];
+
   services.greetd = {
     enable = true;
 
