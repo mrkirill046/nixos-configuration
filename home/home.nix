@@ -12,6 +12,7 @@
     ./modules/kdeconnect.nix
     ./modules/starship.nix
     ./modules/fish.nix
+    ./modules/spicetify.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix
@@ -35,6 +36,8 @@
   home.stateVersion = "26.05";
 
   home.pointerCursor = {
+    enable = true;
+
     name = "material_cursors";
     package = pkgs.material-cursors;
     size = 32;

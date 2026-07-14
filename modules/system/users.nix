@@ -10,6 +10,10 @@
       "wheel"
       "networkmanager"
       "docker"
+      "uinput"
+      "input"
+      "ydotool"
+      "adbusers"
     ];
 
     shell = pkgs.fish;

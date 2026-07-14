@@ -13,9 +13,10 @@
     ../../modules/system/state.nix
     ../../modules/system/environment.nix
 
+    # ../../modules/desktop/sddm.nix
     ../../modules/desktop/graphics.nix
-    ../../modules/desktop/sddm.nix
     ../../modules/desktop/niri.nix
+    ../../modules/desktop/greetd.nix
     ../../modules/desktop/fonts.nix
 
     ../../modules/virtualisation/podman.nix
@@ -26,6 +27,7 @@
     ../../modules/programs/direnv.nix
     ../../modules/programs/throne.nix
     ../../modules/programs/appimage.nix
+    ../../modules/programs/ydotool.nix
 
     ../../modules/services/keyring.nix
     ../../modules/services/xwayland.nix
@@ -33,5 +35,6 @@
     ../../modules/services/gnome.nix
     ../../modules/services/polkit.nix
     ../../modules/services/pipewire.nix
+    ../../modules/services/adb.nix
   ];
 }

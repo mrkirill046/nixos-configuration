@@ -69,6 +69,8 @@
             "vscode"
             "yazi"
             "neovim"
+            "spicetify"
+            "obs"
           ];
         };
       };

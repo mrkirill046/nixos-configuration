@@ -38,11 +38,14 @@
 
     # Media / wallpapers
     mpvpaper
+    easyeffects
+    pavucontrol
 
     # GUI system tools
     networkmanagerapplet
     blueman
     mission-center
+    scrcpy
 
     # Bluetooth stack (user tools)
     bluez

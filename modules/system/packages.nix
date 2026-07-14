@@ -27,6 +27,9 @@
     meson
     gnumake
     gcc
+    dotool
+    ydotool
+    wtype
 
     # File previews / GUI utilities
     ffmpegthumbnailer

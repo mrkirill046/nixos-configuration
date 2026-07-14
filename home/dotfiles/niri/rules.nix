@@ -62,6 +62,7 @@
           { app-id = "Tor Browser"; }
           { app-id = "chromium-browser"; }
           { app-id = "obsidian"; }
+          { app-id = "spotify"; }
         ];
 
         open-maximized = true;
@@ -84,35 +85,17 @@
         default-window-height.fixed = 270;
       }
       {
-        matches = [ { app-id = "dialog"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "popup"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "task_dialog"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "gcr-prompter"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "file-roller"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "org.gnome.FileRoller"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "nm-connection-editor"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { app-id = "blueman-manager"; } ];
+        matches = [
+          { app-id = "dialog"; }
+          { app-id = "popup"; }
+          { app-id = "task_dialog"; }
+          { app-id = "gcr-prompter"; }
+          { app-id = "file-roller"; }
+          { app-id = "org.gnome.FileRoller"; }
+          { app-id = "nm-connection-editor"; }
+          { app-id = "blueman-manager"; }
+        ];
+
         open-floating = true;
       }
       {
