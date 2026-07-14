@@ -36,7 +36,6 @@ in
       };
 
       appearance = {
-        scheme = "Synced";
         hide_logo = true;
       };
     };
