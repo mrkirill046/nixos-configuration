@@ -5,6 +5,7 @@
     inputs.niri.homeModules.config
     inputs.noctalia.homeModules.default
     inputs.spicetify-nix.homeManagerModules.default
+    inputs.noctalia-greeter.nixosModules.default
 
     ./modules/packages.nix
     ./modules/desktop.nix

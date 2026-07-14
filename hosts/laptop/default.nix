@@ -33,7 +33,6 @@
     ../../modules/services/xwayland.nix
     ../../modules/services/bluetooth.nix
     ../../modules/services/gnome.nix
-    ../../modules/services/polkit.nix
     ../../modules/services/pipewire.nix
   ];
 }

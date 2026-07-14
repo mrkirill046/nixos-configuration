@@ -18,6 +18,8 @@
       open_near_click_control_center = true;
     };
 
+    greeter_sync.auto_sync = true;
+
     session.actions = [
       {
         action = "logout";
@@ -58,9 +60,10 @@
       directory = "${config.home.homeDirectory}/Pictures/Screenshots";
     };
 
-    niri_overview_type_to_launch_enabled = true;
-
     screen_corners.enabled = true;
+
     screen_time_enabled = true;
+    polkit_agent = true;
+    niri_overview_type_to_launch_enabled = true;
   };
 }

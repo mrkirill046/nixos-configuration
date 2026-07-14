@@ -4,10 +4,6 @@ let
   noctalia-greeter = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
-  imports = [
-    inputs.noctalia-greeter.nixosModules.default
-  ];
-
   services.greetd = {
     enable = true;
 
@@ -22,13 +18,22 @@ in
   programs.noctalia-greeter = {
     enable = true;
 
-    greeter-args = "";
-
     settings = {
       cursor = {
         theme = "material_cursors";
-        size = 24;
+        size = 32;
         path = "${pkgs.material-cursors}/share/icons";
+      };
+
+      keyboard = {
+        layout = "us,ru";
+        options = "grp:win_space_toggle";
+        numlock = true;
+      };
+
+      appearance = {
+        scheme = "Synced";
+        hide_logo = true;
       };
     };
   };

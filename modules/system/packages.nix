@@ -51,7 +51,6 @@
 
     # Security / auth
     polkit
-    polkit_gnome
     gnome-keyring
     libsecret
 
