@@ -4,6 +4,7 @@
   imports = [
     inputs.niri.homeModules.config
     inputs.noctalia.homeModules.default
+    inputs.spicetify-nix.homeManagerModules.default
 
     ./modules/packages.nix
     ./modules/desktop.nix

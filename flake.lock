@@ -407,10 +407,10 @@
         "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
         "noctalia-greeter": "noctalia-greeter",
-        "spicetify": "spicetify"
+        "spicetify-nix": "spicetify-nix"
       }
     },
-    "spicetify": {
+    "spicetify-nix": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"

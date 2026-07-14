@@ -35,6 +35,5 @@
     ../../modules/services/gnome.nix
     ../../modules/services/polkit.nix
     ../../modules/services/pipewire.nix
-    ../../modules/services/adb.nix
   ];
 }

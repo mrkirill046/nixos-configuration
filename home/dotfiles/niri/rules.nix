@@ -53,6 +53,14 @@
         };
       }
       {
+        matches = [ { app-id = "io.missioncenter.MissionCenter"; } ];
+
+        open-floating = true;
+
+        default-column-width.fixed = 1200;
+        default-window-height.fixed = 800;
+      }
+      {
         matches = [ { app-id = "com.ayugram.desktop"; } ];
         block-out-from = "screencast";
       }
@@ -62,7 +70,7 @@
           { app-id = "Tor Browser"; }
           { app-id = "chromium-browser"; }
           { app-id = "obsidian"; }
-          { app-id = "spotify"; }
+          { app-id = "^[Ss]potify$"; }
         ];
 
         open-maximized = true;

@@ -56,6 +56,7 @@
     libsecret
 
     # Shell / dev tools
+    android-tools
     fish
     openssh
     git

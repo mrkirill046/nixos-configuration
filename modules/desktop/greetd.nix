@@ -27,7 +27,7 @@ in
     settings = {
       cursor = {
         theme = "material_cursors";
-        size = 32;
+        size = 24;
         path = "${pkgs.material-cursors}/share/icons";
       };
     };
