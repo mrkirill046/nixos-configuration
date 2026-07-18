@@ -34,5 +34,9 @@
       video_directory = "${config.home.homeDirectory}/Videos/Wallpapers";
       mpv_options = "--video-sync=display-resample --gpu-context=x11egl";
     };
+    "radimous/prismlauncher-instances" = {
+      prism_path = "${config.home.homeDirectory}/.local/share/ElyPrismLauncher";
+      launcher_exec_command = "pineconemc";
+    };
   };
 }

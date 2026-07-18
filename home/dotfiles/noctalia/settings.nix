@@ -12,8 +12,6 @@
 
         default = {
           path = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
-          last = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
-          monitors.eDP-1 = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
         };
       };
 
@@ -159,7 +157,7 @@
 
         concave_edge_corners = false;
         hover_highlight = false;
-   
+
         start = [
           "workspaces"
           "spacer_2"

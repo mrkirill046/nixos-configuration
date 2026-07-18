@@ -96,5 +96,9 @@
       terminal = false;
       mimeTypes = [ "application/x-desktop" ];
     })
+
+    (writeShellScriptBin "pineconemc" ''
+      exec "$HOME/Applications/PineconeMC-Linux-x86_64.AppImage" "$@"
+    '')
   ];
 }
