@@ -22,6 +22,7 @@
     libnotify
     onlyoffice-desktopeditors
     evince
+    hyprpicker
 
     # Gaming
     steam
@@ -63,10 +64,26 @@
     curl
     wget
     btop
-    cava
     dust
     duf
     dex
+
+    # Terminal things
+    cava
+    cmatrix
+    nyancat
+    unimatrix
+    asciiquarium
+    cbonsai
+    tty-clock
+    bb
+    bastet
+    glow
+    pipes-rs
+    lavat
+    mapscii
+    sl
+    hollywood
 
     # Icons / themes
     adwaita-icon-theme

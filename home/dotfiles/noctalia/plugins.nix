@@ -7,6 +7,12 @@
       "noctalia/translator"
       "noctalia/kaomoji"
       "noctalia/notes"
+      "noctalia/timer"
+      "8bury/mini-docker"
+      "avivbintangaringga/nix-monitor"
+      "nightwatch75/todo"
+      "rxtsel/portctl"
+      "radimous/prismlauncher-instances"
     ];
 
     source = [
