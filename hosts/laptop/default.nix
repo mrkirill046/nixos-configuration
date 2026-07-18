@@ -28,6 +28,7 @@
     ../../modules/programs/throne.nix
     ../../modules/programs/appimage.nix
     ../../modules/programs/ydotool.nix
+    ../../modules/programs/creamlinux.nix
 
     ../../modules/services/keyring.nix
     ../../modules/services/xwayland.nix

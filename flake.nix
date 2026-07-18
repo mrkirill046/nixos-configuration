@@ -49,9 +49,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-     noctalia-greeter = {
+    noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    creamlinux-installer = {
+      type = "github";
+      owner = "Novattz";
+      repo = "creamlinux-installer";
+      flake = false;
     };
   };
 

@@ -64,11 +64,29 @@
       "application/yaml" = [ "org.gnome.TextEditor.desktop" ];
       "text/x-shellscript" = [ "org.gnome.TextEditor.desktop" ];
       "application/x-zerosize" = [ "org.gnome.TextEditor.desktop" ];
+      "application/pdf" = [ "org.gnome.Evince.desktop" ];
 
       "audio/mpeg" = [ "io.bassi.Amberol.desktop" ];
       "audio/ogg" = [ "io.bassi.Amberol.desktop" ];
       "audio/wav" = [ "io.bassi.Amberol.desktop" ];
       "audio/x-flac" = [ "io.bassi.Amberol.desktop" ];
+
+      "application/msword" = [ "onlyoffice-desktopeditors.desktop" ];
+      "application/vnd.ms-excel" = [ "onlyoffice-desktopeditors.desktop" ];
+      "application/vnd.ms-powerpoint" = [ "onlyoffice-desktopeditors.desktop" ];
+      "application/vnd.oasis.opendocument.text" = [ "onlyoffice-desktopeditors.desktop" ];
+      "application/vnd.oasis.opendocument.spreadsheet" = [ "onlyoffice-desktopeditors.desktop" ];
+      "application/vnd.oasis.opendocument.presentation" = [ "onlyoffice-desktopeditors.desktop" ];
+
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [
+        "onlyoffice-desktopeditors.desktop"
+      ];
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = [
+        "onlyoffice-desktopeditors.desktop"
+      ];
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation" = [
+        "onlyoffice-desktopeditors.desktop"
+      ];
     };
   };
 
