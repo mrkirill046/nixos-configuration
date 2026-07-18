@@ -27,6 +27,7 @@
     # Gaming
     steam
     steam-run
+    gamescope
 
     # Mods / tweaks
     gamemode
