@@ -21,6 +21,7 @@
     jetbrains.datagrip
     libnotify
     onlyoffice-desktopeditors
+    evince
 
     # Gaming
     steam

@@ -71,6 +71,7 @@
           { app-id = "chromium-browser"; }
           { app-id = "obsidian"; }
           { app-id = "^[Ss]potify$"; }
+          { app-id = "org.gnome.Evince"; }
         ];
 
         open-maximized = true;
@@ -107,63 +108,29 @@
         open-floating = true;
       }
       {
-        matches = [ { app-id = "xdg-desktop-portal-gtk"; } ];
+        matches = [
+          { title = "Progress"; }
+          { title = "File Operations"; }
+          { title = "Copying"; }
+          { title = "Moving"; }
+          { title = "Properties"; }
+          { title = "file progress"; }
+          { title = "Confirm"; }
+          { title = "Authentication Required"; }
+          { title = "Notice"; }
+          { title = "Warning"; }
+          { title = "Error"; }
+        ];
 
-        open-floating = true;
-
-        default-column-width.fixed = 800;
-        default-window-height.fixed = 600;
-      }
-      {
-        matches = [ { title = "Progress"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "File Operations"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Copying"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Moving"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Properties"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "file progress"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Confirm"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Authentication Required"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Notice"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Warning"; } ];
-        open-floating = true;
-      }
-      {
-        matches = [ { title = "Error"; } ];
         open-floating = true;
       }
       {
         matches = [
           {
             app-id = "org.gnome.Nautilus";
-            title = "^.*(File Upload|Choose Files|Open folder|Enter name of file to save to).*$";
+            title = "^.*(File Upload|Choose Files|Open folder|Enter name of file to save to|Open Document).*$";
           }
+          { app-id = "xdg-desktop-portal-gtk"; }
         ];
 
         open-floating = true;
