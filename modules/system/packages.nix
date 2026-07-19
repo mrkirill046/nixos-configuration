@@ -59,10 +59,9 @@
     openssh
     git
     tree
-    rustc
-    cargo
-    rustfmt
     clippy
+    rustfmt
+    rustup
     uv
     nodejs_24
     bun
