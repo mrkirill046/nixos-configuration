@@ -128,7 +128,7 @@
         matches = [
           {
             app-id = "org.gnome.Nautilus";
-            title = "^.*(File Upload|Choose Files|Open folder|Enter name of file to save to|Open Document).*$";
+            title = "(?i)^.*(File Upload|Choose Files|Open folder|Enter name of file to save to|Open Document).*$";
           }
           { app-id = "xdg-desktop-portal-gtk"; }
         ];
