@@ -60,6 +60,11 @@
       repo = "creamlinux-installer";
       flake = false;
     };
+
+    dynamic-drpc-wayland = {
+      url = "github:mrkirill046/discord-dynamic-status-wayland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

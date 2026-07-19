@@ -5,6 +5,7 @@
     inputs.niri.homeModules.config
     inputs.noctalia.homeModules.default
     inputs.spicetify-nix.homeManagerModules.default
+    inputs.dynamic-drpc-wayland.homeManagerModules.default
 
     ./modules/packages.nix
     ./modules/desktop.nix
@@ -14,6 +15,7 @@
     ./modules/starship.nix
     ./modules/fish.nix
     ./modules/spicetify.nix
+    ./modules/ddsw.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix

@@ -18,6 +18,7 @@
     ../../modules/desktop/niri.nix
     ../../modules/desktop/greetd.nix
     ../../modules/desktop/fonts.nix
+    ../../modules/desktop/hyprland.nix
 
     ../../modules/virtualisation/podman.nix
     ../../modules/virtualisation/ollama.nix
