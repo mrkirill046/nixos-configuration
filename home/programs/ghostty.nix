@@ -17,6 +17,8 @@
       font-size = 14;
 
       window-decoration = true;
+
+      theme = "noctalia";
     };
   };
 }
