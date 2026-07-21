@@ -23,6 +23,7 @@
     onlyoffice-desktopeditors
     evince
     hyprpicker
+    opencode
 
     # Gaming
     steam
@@ -44,6 +45,7 @@
     mpvpaper
     easyeffects
     pavucontrol
+    gimp
 
     # GUI system tools
     networkmanagerapplet

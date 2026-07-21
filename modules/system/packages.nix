@@ -68,5 +68,6 @@
     dotnet-sdk_9
     jdk21
     go
+    qemu
   ];
 }

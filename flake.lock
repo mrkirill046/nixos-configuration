@@ -24,11 +24,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1784505183,
-        "narHash": "sha256-hY58LMe7xhDxwJlMZAbq6+xpTJieB+41U0KvmWQUm5g=",
+        "lastModified": 1784547106,
+        "narHash": "sha256-+YHT83Nd22+HW/XJqQS/M5VcW3Y8WWBC0gtEmeTxqho=",
         "owner": "mrkirill046",
         "repo": "discord-dynamic-status-wayland",
-        "rev": "b3c0839b4c0f409ce9de2a75d5f347f9ce87b7b5",
+        "rev": "a69c54c0758d874e18323969dafbd71cee6cd869",
         "type": "github"
       },
       "original": {
