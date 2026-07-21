@@ -16,6 +16,7 @@
     ./modules/fish.nix
     ./modules/spicetify.nix
     ./modules/ddsw.nix
+    ./modules/bot.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix
