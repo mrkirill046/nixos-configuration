@@ -13,6 +13,7 @@
       "nightwatch75/todo"
       "rxtsel/portctl"
       "radimous/prismlauncher-instances"
+      "kenn/keybind-cheatsheet"
     ];
 
     source = [

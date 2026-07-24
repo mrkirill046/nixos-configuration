@@ -24,6 +24,7 @@
     evince
     hyprpicker
     opencode
+    localsend
 
     # Gaming
     steam

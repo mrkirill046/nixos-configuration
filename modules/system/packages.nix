@@ -60,6 +60,7 @@
     git
     tree
     clippy
+    openssl
     rustfmt
     rustup
     uv
