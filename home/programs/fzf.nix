@@ -39,6 +39,7 @@
 
   programs.fzf = {
     enable = true;
+    enableFishIntegration = true;
 
     defaultCommand = ''
       fd --type f \

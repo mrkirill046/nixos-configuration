@@ -120,6 +120,21 @@
         action = spawn "sh" "-c" "noctalia msg panel-toggle noctalia/mpvpaper:picker";
       };
 
+      "Mod+Shift+F" = {
+        hotkey-overlay.title = "Show file search panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle nightwatch75/file-search:panel";
+      };
+
+      "Mod+Shift+G" = {
+        hotkey-overlay.title = "Show game panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle alexander/game-launcher:browser";
+      };
+
+      "Mod+Shift+B" = {
+        hotkey-overlay.title = "Show next boot panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle avivbintangaringga/nextboot-selector:panel";
+      };
+
       "Mod+Shift+C" = {
         hotkey-overlay.title = "Show color picker panel";
         action = spawn "sh" "-c" "noctalia msg panel-toggle oldirtty/color_picker:panel";
@@ -205,7 +220,7 @@
         fullscreen-window = { };
       };
 
-      "Mod+Shift+F".action = maximize-column;
+      "Mod+Ctrl+F".action = maximize-column;
 
       # Set column width / height
       "Mod+1".action = set-column-width "25%";

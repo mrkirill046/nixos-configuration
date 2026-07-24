@@ -76,5 +76,13 @@
       browser_placement = "attached";
       steampoacher_enabled = true;
     };
+
+    "yocraft/web-launcher" = {
+      links = [
+        "GitHub|https://github.com"
+        "YouTube|https://youtube.com"
+        "Gmail|https://mail.google.com"
+      ];
+    };
   };
 }

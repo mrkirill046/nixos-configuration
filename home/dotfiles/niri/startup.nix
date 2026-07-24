@@ -69,5 +69,12 @@
         "sleep 5 && ${config.home.homeDirectory}/Applications/Handy_amd64.AppImage --start-hidden"
       ];
     }
+    {
+      command = [
+        "sh"
+        "-c"
+        "localsend_app --hidden"
+      ];
+    }
   ];
 }
