@@ -39,7 +39,6 @@
   programs.noctalia.settings.plugin_settings = {
     "noctalia/mpvpaper" = {
       video_directory = "${config.home.homeDirectory}/Videos/Wallpapers";
-      mpv_options = "--video-sync=display-resample --gpu-context=x11egl";
     };
 
     "radimous/prismlauncher-instances" = {
@@ -69,7 +68,7 @@
     };
 
     "nightwatch75/file-search" = {
-      exclude_dirs = ".git,node_modules,target,dist,build,out,.venv,venv,__pycache__,Library,Temp,Logs,.direnv";
+      exclude_dirs = "jetbra,6000.3.12f1,.git,node_modules,target,dist,build,out,.venv,venv,__pycache__,Library,Temp,Logs,.direnv";
     };
 
     "alexander/game-launcher" = {

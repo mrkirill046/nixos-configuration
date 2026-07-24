@@ -100,6 +100,10 @@
       };
 
       widget = {
+        eyecare-widget = {
+          type = "apex077/eyecare:eyecare-widget";
+        };
+
         bluetooth = {
           hide_when_no_connected_device = true;
         };
@@ -121,6 +125,7 @@
         spacer_5.type = "spacer";
         spacer_6.type = "spacer";
         spacer_7.type = "spacer";
+        spacer_8.type = "spacer";
 
         weather = {
           show_condition = false;
@@ -164,11 +169,15 @@
           "active_window"
           "spacer_3"
           "media"
+          "spacer_8"
+          "eyecare-widget"
         ];
+
         center = [
           "caffeine"
           "clock"
         ];
+
         end = [
           "audio_visualizer"
           "spacer_7"
