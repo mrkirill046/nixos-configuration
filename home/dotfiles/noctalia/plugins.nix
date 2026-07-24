@@ -10,10 +10,16 @@
       "noctalia/timer"
       "8bury/mini-docker"
       "avivbintangaringga/nix-monitor"
+      "avivbintangaringga/nextboot-selector"
       "nightwatch75/todo"
+      "nightwatch75/file-search"
       "rxtsel/portctl"
       "radimous/prismlauncher-instances"
       "kenn/keybind-cheatsheet"
+      "oldirtty/color_picker"
+      "apex077/eyecare"
+      "alexander/game-launcher"
+      "yocraft/web-launcher"
     ];
 
     source = [
@@ -35,9 +41,40 @@
       video_directory = "${config.home.homeDirectory}/Videos/Wallpapers";
       mpv_options = "--video-sync=display-resample --gpu-context=x11egl";
     };
+
     "radimous/prismlauncher-instances" = {
       prism_path = "${config.home.homeDirectory}/.local/share/ElyPrismLauncher";
       launcher_exec_command = "pineconemc";
+    };
+
+    "kenn/keybind-cheatsheet" = {
+      cheatsheet_placement = "attached";
+    };
+
+    "8bury/mini-docker" = {
+      manager_placement = "attached";
+    };
+
+    "avivbintangaringga/nix-monitor" = {
+      panel_card_opacity = 50;
+      update_command = "nix flake update /etc/nixos";
+    };
+
+    "rxtsel/portctl" = {
+      panel_placement = "attached";
+    };
+
+    "oldirtty/color_picker" = {
+      panel_placement = "attached";
+    };
+
+    "nightwatch75/file-search" = {
+      exclude_dirs = ".git,node_modules,target,dist,build,out,.venv,venv,__pycache__,Library,Temp,Logs,.direnv";
+    };
+
+    "alexander/game-launcher" = {
+      browser_placement = "attached";
+      steampoacher_enabled = true;
     };
   };
 }

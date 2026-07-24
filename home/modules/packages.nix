@@ -25,6 +25,8 @@
     hyprpicker
     opencode
     localsend
+    fzf
+    sqlite
 
     # Gaming
     steam

@@ -5,8 +5,15 @@
     hostName = "laptop";
 
     firewall = {
-      allowedTCPPorts = [ 53317, 7897 ];
-      allowedUDPPorts = [ 53317, 7897 ];
+      allowedTCPPorts = [
+        53317
+        7897
+      ];
+
+      allowedUDPPorts = [
+        53317
+        7897
+      ];
 
       allowedTCPPortRanges = [
         {

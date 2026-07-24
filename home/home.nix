@@ -28,6 +28,7 @@
     ./programs/minecraft.nix
     ./programs/obs.nix
     ./programs/nvim.nix
+    ./programs/fzf.nix
     ./programs/handy.nix
 
     ./dotfiles/noctalia/default.nix

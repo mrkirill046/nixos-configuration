@@ -90,9 +90,39 @@
         action = spawn "sh" "-c" "noctalia msg panel-toggle clipboard";
       };
 
+      "Mod+Shift+D" = {
+        hotkey-overlay.title = "Show docker panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle 8bury/mini-docker:manager";
+      };
+
+      "Mod+Shift+M" = {
+        hotkey-overlay.title = "Show nix monitor panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle avivbintangaringga/nix-monitor:panel";
+      };
+
+      "Mod+Shift+N" = {
+        hotkey-overlay.title = "Show notes panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle noctalia/notes:panel";
+      };
+
+      "Mod+Shift+P" = {
+        hotkey-overlay.title = "Show portctl panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle rxtsel/portctl:panel";
+      };
+
+      "Mod+Shift+T" = {
+        hotkey-overlay.title = "Show todo panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle nightwatch75/todo:panel";
+      };
+
       "Mod+Shift+W" = {
         hotkey-overlay.title = "Show video wallpaper panel";
         action = spawn "sh" "-c" "noctalia msg panel-toggle noctalia/mpvpaper:picker";
+      };
+
+      "Mod+Shift+C" = {
+        hotkey-overlay.title = "Show color picker panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle oldirtty/color_picker:panel";
       };
 
       # Window management
@@ -110,7 +140,7 @@
         hotkey-overlay.title = "Take fullscreen screenshot";
         action = fullscreen-screenshot;
       };
-      "Mod+Shift+P" = {
+      "Mod+P" = {
         hotkey-overlay.title = "Take fullscreen screenshot";
         action = fullscreen-screenshot;
       };
@@ -158,8 +188,9 @@
 
       ### Window management
       # Core window actions
-      "Mod+Slash".action = {
-        show-hotkey-overlay = [ ];
+      "Mod+Slash" = {
+        hotkey-overlay.title = "Toggle cheatsheet panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet";
       };
 
       "Mod+Q".action = close-window;
@@ -167,7 +198,7 @@
       "Mod+F".action = toggle-window-floating;
       "Mod+O".action = toggle-overview;
       "Alt+Tab".action = switch-focus-between-floating-and-tiling;
-      "Mod+Shift+C".action = center-visible-columns;
+      "Mod+Ctrl+C".action = center-visible-columns;
 
       # Fullscreen window
       "F11".action = {
