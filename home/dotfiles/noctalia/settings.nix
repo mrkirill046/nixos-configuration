@@ -169,8 +169,6 @@
           "active_window"
           "spacer_3"
           "media"
-          "spacer_8"
-          "eyecare-widget"
         ];
 
         center = [
@@ -189,6 +187,8 @@
           "brightness"
           "battery"
           "spacer_4"
+          "eyecare-widget"
+          "spacer_8"
           "tray"
         ];
 
